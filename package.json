@@ -10,5 +10,12 @@
     "type": "git"
   },
   "author": "@jfbenavid",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "css-loader": "^1.0.0",
+    "react": "^16.4.2",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.4"
+  }
 }

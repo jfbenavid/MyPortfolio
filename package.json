@@ -4,7 +4,8 @@
   "description": "Portfolio where I show my professional carreer.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev:css": "stylus --watch ./src/css/styles.styl"
   },
   "repository": {
     "type": "git"
@@ -16,6 +17,7 @@
     "css-loader": "^1.0.0",
     "react": "^16.4.2",
     "style-loader": "^0.21.0",
+    "stylus": "^0.54.5",
     "webpack": "^4.16.4"
   }
 }

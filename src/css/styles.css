@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 5px 0;
+}
+h1 {
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+figure {
+  margin: 0;
+  height: 200px;
+  width: 200px;
+}
+.container {
+  width: 800px;
+  color: #fff;
+  margin: auto;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.contact h4 {
+  margin-bottom: 5px;
+}
+.info {
+  width: 461px;
+  margin-top: 20px;
+  align-content: right;
+}
+.header {
+  background-image: url("../images/space.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+}
+.photo {
+  margin-left: 0;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.photo img {
+  width: 200px;
+  position: relative;
+  bottom: 50px;
+}

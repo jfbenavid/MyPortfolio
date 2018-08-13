@@ -1,6 +1,9 @@
+linesColor = #3B3B3B
+
 body
     margin 0
     font-family 'Roboto', sans-serif
+    color linesColor
 
 h3
     font-family 'Montserrat', sans-serif
@@ -20,7 +23,6 @@ figure
 
 .container
     width 800px
-    color white
     margin auto
     padding-top 35px
     display flex
@@ -34,9 +36,36 @@ figure
         margin-bottom 5px
 
 .info
+    color white
     width 461px
     margin-top 20px
     align-content: right
+
+.job
+    border 1px solid linesColor
+    border-radius 3px
+    width 100%
+    padding 20px
+    display flex
+    justify-content space-between
+
+.jobInfo
+    width 40%
+
+    h3, h4, h5 
+        margin 0 0 5px 0
+
+.jobFunctions
+    width 60%
+    span
+        font-weight 600
+        display block
+
+    p
+        margin 0 0 8px 0
+        font-family 'Montserrat', sans-serif
+        font-size 0.8em
+
 
 .header
     background-image url("../images/space.jpg")
@@ -55,3 +84,6 @@ figure
         width 200px
         position relative
         bottom 50px
+
+.title
+    display block

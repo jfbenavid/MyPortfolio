@@ -1,20 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
-import '../css/styles.styl';
-import Header from "./components/Header";
-import Jobs from "./components/Jobs";
-import Footer from "./components/Footer";
+import Index from './containers/index';
 
-class Index extends Component {
-    render() {
-        return (
-            <div>
-                <Header />
-                <Jobs />
-                <Footer />
-            </div>
-        );
-    }
-}
-
-render(<Index />, document.body);
+render(<Index />, document.getElementById('app'));

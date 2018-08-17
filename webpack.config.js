@@ -1,6 +1,7 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -16,29 +17,28 @@ module.exports = {
 		rules: [
 			{
 				test: /\.styl$/,
-				use: ExtractTextPlugin.extract({
-					use: [
-						{
-							loader: 'css-loader',
-							options: {
-								minimize: true
-							}
-						},
-						{
-							loader: 'stylus-loader',
-							options: {
-								use: [
-									require('nib'),
-									require('rupture')
-								],
-								import: [
-									'~nib/lib/nib/index.styl',
-									'~rupture/rupture/index.styl'
-								]
-							}
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: 'css-loader',
+						options: {
+							minimize: true
 						}
-					]
-				})
+					},
+					{
+						loader: 'stylus-loader',
+						options: {
+							use: [
+								require('nib'),
+								require('rupture')
+							],
+							import: [
+								'~nib/lib/nib/index.styl',
+								'~rupture/rupture/index.styl'
+							]
+						}
+					}
+				]
 			},
 			{
 				test: /\.js$/,
@@ -63,8 +63,16 @@ module.exports = {
 			}
 		]
 	},
+	optimization: {
+		minimizer: [
+			new OptimizeCSSAssetsPlugin({})
+		]
+	},
 	plugins: [
-		new ExtractTextPlugin('css/[name].[hash].css'),
+		new MiniCssExtractPlugin({
+			filename: 'css/[name].[hash].css',
+			chunkFilename: "css/[id].[hash].css"
+		}),
 		new CleanWebpackPlugin(['dist'], { root: __dirname })
 	]
 }

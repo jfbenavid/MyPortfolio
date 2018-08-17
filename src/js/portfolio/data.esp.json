@@ -1,4 +1,8 @@
 {
+    "mainInfo": {
+        "name": "José Fabian Benavides Moreno",
+        "occupation": "Desarrollador de Software"
+    },
     "informationDescription": {
         "email": "Correo electrónico",
         "phone": "Teléfono"

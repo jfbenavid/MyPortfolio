@@ -7,25 +7,47 @@
         "email": "E-mail",
         "phone": "Phone"
     },
+    "profile": {
+        "profile": "Software Developer with 3 years of experience developing web applications and windows services with c#.Net as development language; with knowledges in Python, Django, PHP and frameworks like Angular, Vue and React.",
+        "profileDescription": "Profile"
+    },
     "jobs": {
         "experienceDescription": "Experience",
         "functionDescription": "Functions",
         "achievementsDescription": "Achievements",
-        "jobs":[
+        "jobs": [
             {
                 "id": 3,
                 "jobTitle": "Software Developer",
                 "company": "Inalambria Internacional",
                 "time": "Mar 2016 - Currently",
                 "jobFunctions": [
-                    "Develop REST APIs, with Windows services and web apps using Microsoft technologies.",
-                    "Help to develop new functionalities and fix bugs in the platform(core of the business).",
-                    "Paticipant developing a new component to process files to dispatch messages more efficiently."
+                    {
+                        "id": 311,
+                        "description": "Develop REST APIs, with Windows services and web apps using Microsoft technologies."
+                    },
+                    {
+                        "id": 312,
+                        "description": "Help to develop new functionalities and fix bugs in the platform(core of the business)."
+                    },
+                    {
+                        "id": 313,
+                        "description": "Paticipant developing a new component to process files to dispatch messages more efficiently."
+                    }
                 ],
                 "jobAchievements": [
-                    "Create a service to get more efficient information about the core of the business.",
-                    "Help with the architecture design of a new sms dispatch platform.",
-                    "Help to introduce and apply software programming best practices in the area."
+                    {
+                        "id": 321,
+                        "description": "Create a service to get more efficient information about the core of the business."
+                    },
+                    {
+                        "id": 322,
+                        "description": "Help with the architecture design of a new sms dispatch platform."
+                    },
+                    {
+                        "id": 323,
+                        "description": "Help to introduce and apply software programming best practices in the area."
+                    }
                 ]
             },
             {
@@ -34,12 +56,24 @@
                 "company": "Fundación Universitaria Tecnológico Comfenalco",
                 "time": "Mar 2015 - Jan 2016",
                 "jobFunctions": [
-                    "Develop a web application to manage a domotic central and use it with a prototype made with a Raspberry Pi.",
-                    "The application is able to dimmer and turn the light on/off; It can send orders to some appliance like tv and air conditioners as a remote control does."
+                    {
+                        "id": 211,
+                        "description": "Develop a web application to manage a domotic central and use it with a prototype made with a Raspberry Pi."
+                    },
+                    {
+                        "id": 212,
+                        "description": "The application is able to dimmer and turn the light on/off; It can send orders to some appliance like tv and air conditioners as a remote control does."
+                    }
                 ],
                 "jobAchievements": [
-                    "Learn new technologies as Python and Django.",
-                    "Learn more frontend using stylus as css preprocessor."
+                    {
+                        "id": 221,
+                        "description": "Learn new technologies as Python and Django."
+                    },
+                    {
+                        "id": 222,
+                        "description": "Learn more frontend using stylus as css preprocessor."
+                    }
                 ]
             },
             {
@@ -48,13 +82,28 @@
                 "company": "Sysnet LTDA",
                 "time": "Aug 2015 - Nov 2015",
                 "jobFunctions": [
-                    "Develop new views and functionalities to the business main application.",
-                    "Change some things in a new web site developed in wordpress."
+                    {
+                        "id": 111,
+                        "description": "Develop new views and functionalities to the business main application."
+                    },
+                    {
+                        "id": 112,
+                        "description": "Change some things in a new web site developed in wordpress."
+                    }
                 ],
                 "jobAchievements": [
-                    "New knowledges in javascript using Telerik Kendo and JSON.",
-                    "Learn to develop Stored Procedures in SQL Server.",
-                    "Learn about CMS as Wordpress."
+                    {
+                        "id": 121,
+                        "description": "New knowledges in javascript using Telerik Kendo and JSON."
+                    },
+                    {
+                        "id": 122,
+                        "description": "Learn to develop Stored Procedures in SQL Server."
+                    },
+                    {
+                        "id": 123,
+                        "description": "Learn about CMS as Wordpress."
+                    }
                 ]
             }
         ]

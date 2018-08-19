@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 import Job from '../components/Job';
 
 export default class Jobs extends Component {
+
     render() {
         return (
             <section>
-                <h2 className="container" >{this.props.experienceDescription}</h2>
-                <div className="container">
+                <h2>{this.props.experienceDescription}</h2>
+                <div>
                     {
                         this.props.jobs.map(item => {
-                            return <Job 
+                            return <Job
                                 key={item.id}
-                                functionDescription={this.props.functionDescription} 
+                                functionDescription={this.props.functionDescription}
                                 achievementsDescription={this.props.achievementsDescription}
                                 {...item}
                             />

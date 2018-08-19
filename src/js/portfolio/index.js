@@ -7,8 +7,8 @@ import Info from './header/components/info';
 import Contact from './header/components/contact';
 import Main from "./main/containers/main";
 import Jobs from "./main/containers/jobs";
-// import Footer from "../components/Footer";
-import '../../css/styles.styl';
+import Profile from "./main/components/profile";
+import './styles.styl';
 
 export default class Index extends Component {
     render() {
@@ -21,10 +21,9 @@ export default class Index extends Component {
                     </Info>
                 </Header>
                 <Main>
+                    <Profile {...data.profile}/>
                     <Jobs {...data.jobs} />
                 </Main>
-                {/* <Jobs />
-                <Footer /> */}
             </div>
         );
     }

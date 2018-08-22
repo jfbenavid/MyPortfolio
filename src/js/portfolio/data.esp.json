@@ -1,0 +1,56 @@
+{
+    "mainInfo": {
+        "name": "José Fabian Benavides Moreno",
+        "occupation": "Desarrollador de Software"
+    },
+    "informationDescription": {
+        "email": "Correo electrónico",
+        "phone": "Teléfono"
+    },
+    "experienceDescription": "Experiencia laboral",
+    "jobs": [
+        {
+            "jobTitle": "Desarrollador de software",
+            "company": "Inalambria Internacional",
+            "time": "Mar 2016 - Actualmente",
+            "jobFunctions": [
+                "Desarrollar APIs REST a través de servicios de Windows y aplicaciones web con ayuda de tecnologías Microsoft.",
+                "Ayudar a desarrollar nuevas funcionalidades y arreglar bugs en la plataforma (core del negocio)."
+            ],
+            "jobAchievements": [
+                "Participe en el desarrollo de un nuevo componente para procesar archivos y enviar mensajes de texto de manera eficiente.",
+                "Crear un servicio para obtener información del core del negocio de manera eficiente.",
+                "Crear un servicio para monitorizar otros servicios de windows para que en caso de que se detengan por algún motivo, este lo inicie nuevamente.",
+                "Ayudar con el diseño de la arquitectura de un nuevo componente de despacho de mensajes de texto.",
+                "Ayudar a mejorar y aplicar mejores prácticas de desarrollo de software en el area de tecnología."
+            ]
+        },
+        {
+            "jobTitle": "Proyecto de grado",
+            "company": "Fundación Universitaria Tecnológico Comfenalco",
+            "time": "Mar 2015 - Ene 2016",
+            "jobFunctions": [
+                "Desarrollar una aplicación web para administrar una central domótica y usarla con un prototipo hecho con un Raspberry Pi.",
+                "Dicha aplicación es capaz de dimerizar, apagar y encender las luces de una casa; además de esto, es capaz de enviar órdenes a electrodomésticos como televisores y aires acondicionados tal como un control remoto."
+            ],
+            "jobAchievements": [
+                "Aprender nuevas tecnologías como Python y Django.",
+                "Conocer y aprender de frontend utilizando Stylus como preprocesador de css."
+            ]
+        },
+        {
+            "jobTitle": "Practicante desarrollador de software",
+            "company": "Sysnet LTDA",
+            "time": "Ago 2015 - Nov 2015",
+            "jobFunctions": [
+                "Desarrollar nuevas vistas y funcionalidades para el proyecto principal de la empresa.",
+                "Cambiar algunas partes de un sitio web desarrollado en Wordpress."
+            ],
+            "jobAchievements": [
+                "Adquirir conocimientos en javascript utilizando Telerik Kendo y JSON.",
+                "Aprender a desarrollar en PL/SQL haciendo procedimientos almacenados en SQL Server.",
+                "Aprender acerca de CMS como Wordpress."
+            ]
+        }
+    ]
+}

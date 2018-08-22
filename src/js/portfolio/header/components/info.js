@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/info.styl'
+import '../styles/info.styl';
 
 export default function Info(props) {
     return (

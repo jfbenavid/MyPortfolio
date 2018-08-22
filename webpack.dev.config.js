@@ -11,6 +11,10 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.css$/,
+				use: ['style-loader','css-loader']
+			},
+			{
 				test: /\.styl$/,
 				use: [
 					'style-loader',
@@ -35,7 +39,7 @@ module.exports = {
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: ['env', 'react', 'stage-2']
+						presets: ['env', 'es2015', 'react', 'stage-2']
 					}
 				}
 			},
@@ -46,7 +50,16 @@ module.exports = {
 					options: {
 						limit: 10000,
 						fallback: 'file-loader',
-						name: 'images/[name].[hash].[ext]',
+						name: 'images/[name].[ext]',
+					}
+				}
+			},
+			{
+				test: /\.(woff(2)?|eot|ttf)?(\?v=[0-9]\.[0-9]\.[0-9])?$/m,
+				use: {
+					loader: "file-loader",
+					options: {
+						name: "fonts/[name].[ext]",
 					}
 				}
 			}

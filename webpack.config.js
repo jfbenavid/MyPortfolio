@@ -16,6 +16,18 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.css$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					{
+						loader: 'css-loader',
+						options: {
+							minimize: true
+						}
+					}
+				]
+			},
+			{
 				test: /\.styl$/,
 				use: [
 					MiniCssExtractPlugin.loader,
@@ -55,11 +67,21 @@ module.exports = {
 				use: {
 					loader: 'url-loader',
 					options: {
-						limit: 10000,
+						limit: 100000,
 						fallback: 'file-loader',
 						name: 'images/[name].[hash].[ext]',
 					}
 				}
+			},
+			{
+				test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+				use: [{
+					loader: 'file-loader',
+					options: {
+						limit: 100000,
+						name: 'fonts/[name].[hash].[ext]',
+					}
+				}]
 			}
 		]
 	},

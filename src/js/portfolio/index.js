@@ -9,8 +9,10 @@ import Main from "./main/containers/main";
 import Jobs from "./main/containers/jobs";
 import Profile from "./main/components/profile";
 import './styles.styl';
+import 'font-awesome/css/font-awesome.min.css';
 
 export default class Index extends Component {
+
     render() {
         return (
             <div>

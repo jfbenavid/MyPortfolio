@@ -19,7 +19,7 @@ export default class Index extends Component {
                 <Header>
                     <Photo photo={imgPhoto} altPhoto='Fabian Benavides' />
                     <Info {...data.mainInfo}>
-                        <Contact {...data.informationDescription} />
+                        <Contact {...data.information} />
                     </Info>
                 </Header>
                 <Main>

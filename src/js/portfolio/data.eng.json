@@ -3,9 +3,13 @@
         "name": "Jose Fabian Benavides Moreno",
         "occupation": "Software Developer"
     },
-    "informationDescription": {
-        "contact": "Contact",
-        "phone": "Phone"
+    "information": {
+        "emailDescription": "E-mail",
+        "phoneDescription": "Phone",
+        "socialNetworks": {
+            "linkedin": "https://www.linkedin.com/in/jos%C3%A9-fabian-benavides-moreno-1747b092/?locale=en_US",
+            "github": "https://github.com/jfbenavid"
+        }
     },
     "profile": {
         "profile": "Software Developer with 3 years of experience developing web applications and windows services with c#.Net as development language; with knowledges in Python, Django, PHP and frameworks like Angular, Vue and React.",

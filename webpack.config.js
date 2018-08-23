@@ -11,8 +11,8 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'js/[name].[hash].js',
-		publicPath: path.resolve(__dirname, 'dist') + "/",
 		chunkFilename: 'js/[id].[chunkhash].js',
+		publicPath: '/',
 	},
 	module: {
 		rules: [
@@ -96,7 +96,7 @@ module.exports = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].[hash].css',
-			chunkFilename: "css/[id].[hash].css"
+			chunkFilename: "css/[id].[hash].css",
 		}),
 		new CleanWebpackPlugin(['dist'], { root: __dirname })
 	]

@@ -12,30 +12,35 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'js/[name].[hash].js',
 		chunkFilename: 'js/[id].[chunkhash].js',
-		publicPath: '/',
+		publicPath: 'dist/',
 	},
 	module: {
 		rules: [
 			{
 				test: /\.css$/,
 				use: [
-					MiniCssExtractPlugin.loader,
 					{
-						loader: 'css-loader',
+						loader: MiniCssExtractPlugin.loader,
 						options: {
-							minimize: true
+							 publicPath: "../"
 						}
-					}
+					},
+					'css-loader'
 				]
 			},
 			{
 				test: /\.styl$/,
 				use: [
-					MiniCssExtractPlugin.loader,
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+							 publicPath: "../"
+						}
+					},
 					{
 						loader: 'css-loader',
 						options: {
-							minimize: true
+							sourceMap: true
 						}
 					},
 					{
@@ -70,6 +75,7 @@ module.exports = {
 					options: {
 						limit: 100000,
 						fallback: 'file-loader',
+						useRelativePath: true,
 						name: 'images/[name].[hash].[ext]',
 					}
 				}
@@ -95,8 +101,8 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: 'css/[name].[hash].css',
-			chunkFilename: "css/[id].[hash].css",
+			filename: './css/[name].[hash].css',
+			chunkFilename: "./css/[id].[hash].css"
 		}),
 		new CleanWebpackPlugin(['dist'], { root: __dirname })
 	]

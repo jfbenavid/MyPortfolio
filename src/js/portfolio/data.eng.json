@@ -7,12 +7,12 @@
         "emailDescription": "E-mail",
         "phoneDescription": "Phone",
         "socialNetworks": {
-            "linkedin": "https://www.linkedin.com/in/jos%C3%A9-fabian-benavides-moreno-1747b092/?locale=en_US",
+            "linkedin": "https://www.linkedin.com/in/jfbenavid",
             "github": "https://github.com/jfbenavid"
         }
     },
     "profile": {
-        "profile": "Software Developer with 3 years of experience developing web applications and windows services with c#.Net as development language; with knowledges in Python, Django, PHP and frameworks like Angular, Vue and React.",
+        "profile": "Software Developer with 3 years of experience developing web applications and windows services with c#.Net as development language; with knowledges in Python, Django, PHP and Javascript frameworks like Angular, React and WebPack.",
         "profileDescription": "Profile"
     },
     "jobs": {
@@ -21,10 +21,44 @@
         "achievementsDescription": "Achievements",
         "jobs": [
             {
+                "id": "j4",
+                "jobTitle": "Software Developer",
+                "company": "Globant",
+                "time": "Jul 2018 - Currently",
+                "jobFunctions": [
+                    {
+                        "id": "j411",
+                        "description": "Develop new functionalities and fix bugs in the platform, with web apps using Microsoft technologies."
+                    },
+                    {
+                        "id": "j412",
+                        "description": "Write unit tests to prove the functionalities before the deployes."
+                    }
+                ],
+                "jobAchievements": [
+                    {
+                        "id": "j421",
+                        "description": "Get knowledge about design patterns."
+                    },
+                    {
+                        "id": "j422",
+                        "description": "Increase my knowledge in AngularJS and get knowledge in ReactJs and Webpack."
+                    },
+                    {
+                        "id": "j423",
+                        "description": "Enhance my knowledge in CSS."
+                    },
+                    {
+                        "id": "j424",
+                        "description": "Apply my knowledge in Scrum and share it with the team."
+                    }
+                ]
+            },
+            {
                 "id": "j3",
                 "jobTitle": "Software Developer",
                 "company": "Inalambria Internacional",
-                "time": "Mar 2016 - Currently",
+                "time": "Mar 2016 - Jul 2018",
                 "jobFunctions": [
                     {
                         "id": "j311",
@@ -33,10 +67,6 @@
                     {
                         "id": "j312",
                         "description": "Help to develop new functionalities and fix bugs in the platform(core of the business)."
-                    },
-                    {
-                        "id": "j313",
-                        "description": "Paticipant developing a new component to process files to dispatch messages more efficiently."
                     }
                 ],
                 "jobAchievements": [
@@ -51,6 +81,10 @@
                     {
                         "id": "j323",
                         "description": "Help to introduce and apply software programming best practices in the area."
+                    },
+                    {
+                        "id": "j324",
+                        "description": "Paticipant developing a new component to process files to dispatch messages more efficiently."
                     }
                 ]
             },
@@ -121,7 +155,7 @@
                 "institute": "Fundación Universitaria Tecnológico Comfenalco",
                 "urlFile": "#",
                 "endingDate": "2018",
-                "instituteLogo": "../../../../images/tecno-comfenalco.png"
+                "instituteLogo": "./src/images/tecno-comfenalco.png"
             },
             {
                 "id": "e5",
@@ -129,7 +163,7 @@
                 "institute": "CertiProf",
                 "urlFile": "https://drive.google.com/open?id=1e55Jh0mga5FgCFhSIoCCG_7u2ZicUKeH",
                 "endingDate": "2018",
-                "instituteLogo": "../../../../images/certiprof.png"
+                "instituteLogo": "./src/images/certiprof.png"
             },
             {
                 "id": "e4",
@@ -137,7 +171,7 @@
                 "institute": "Scrum Agile Institute",
                 "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpemVIMHlfeHB6WjA",
                 "endingDate": "2015",
-                "instituteLogo": "../../../../images/scrum-agile-institute.png"
+                "instituteLogo": "./src/images/scrum-agile-institute.png"
             },
             {
                 "id": "e3",
@@ -145,7 +179,7 @@
                 "institute": "Microsoft",
                 "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpWVRBVExmX0tlbUE",
                 "endingDate": "2014",
-                "instituteLogo": "../../../../images/microsoft.png"
+                "instituteLogo": "./src/images/microsoft.png"
             },
             {
                 "id": "e2",
@@ -153,7 +187,7 @@
                 "institute": "Fundación Universitaria Tecnológico Comfenalco",
                 "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpbXFmamkxYUZFUnc",
                 "endingDate": "2013",
-                "instituteLogo": "../../../../images/tecno-comfenalco.png"
+                "instituteLogo": "./src/images/tecno-comfenalco.png"
             },
             {
                 "id": "e1",
@@ -161,7 +195,7 @@
                 "institute": "Microsoft Virtual Academy",
                 "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpMDBld3hoU3JMaEU",
                 "endingDate": "2013",
-                "instituteLogo": "../../../../images/microsoft.png"
+                "instituteLogo": "./src/images/microsoft.png"
             }
         ]
     }

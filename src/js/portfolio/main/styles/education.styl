@@ -1,10 +1,11 @@
 color = #3B3B3B
+hoverColor = #f3f3f3
 
 .education
     a
         color color
 
-.education>div
+.education > div
     margin-bottom 20px
     display grid
     grid-template-columns repeat(2, 1fr)
@@ -17,6 +18,9 @@ color = #3B3B3B
     grid-template-columns 90px 1fr
     grid-template-areas "image info" "image info" "image info"
     align-items center
+
+    &:hover
+        background-color hoverColor
 
     h4
         margin 0

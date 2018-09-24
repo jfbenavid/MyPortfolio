@@ -9,10 +9,9 @@ export default class Education extends Component {
                 <div>
                     {
                         this.props.educations.map(item => {
-                            return <EducationItem
-                                key={item.id}
-                                {...item}
-                            />
+                            return (
+                                <EducationItem key={item.id} {...item} />
+                            )
                         })
                     }
                 </div>

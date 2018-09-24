@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -10,31 +11,36 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'js/[name].[hash].js',
-		publicPath: path.resolve(__dirname, 'dist') + "/",
 		chunkFilename: 'js/[id].[chunkhash].js',
+		publicPath: 'dist/',
 	},
 	module: {
 		rules: [
 			{
 				test: /\.css$/,
 				use: [
-					MiniCssExtractPlugin.loader,
 					{
-						loader: 'css-loader',
+						loader: MiniCssExtractPlugin.loader,
 						options: {
-							minimize: true
+							publicPath: "../"
 						}
-					}
+					},
+					'css-loader'
 				]
 			},
 			{
 				test: /\.styl$/,
 				use: [
-					MiniCssExtractPlugin.loader,
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+							publicPath: "../"
+						}
+					},
 					{
 						loader: 'css-loader',
 						options: {
-							minimize: true
+							sourceMap: true
 						}
 					},
 					{
@@ -63,7 +69,7 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(jpg|png|gif|svg)$/,
+				test: /\.(jpg|png|gif)$/,
 				use: {
 					loader: 'url-loader',
 					options: {
@@ -74,7 +80,7 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+				test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
 				use: [{
 					loader: 'file-loader',
 					options: {
@@ -86,8 +92,10 @@ module.exports = {
 		]
 	},
 	optimization: {
+		minimize: true,
 		minimizer: [
-			new OptimizeCSSAssetsPlugin({})
+			new OptimizeCSSAssetsPlugin({}),
+			new UglifyJsPlugin({ include: /\.js$/ })
 		]
 	},
 	plugins: [

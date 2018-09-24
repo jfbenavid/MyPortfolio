@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Job from '../components/Job';
 
-export default class Jobs extends Component {
+export default class Experience extends Component {
 
     render() {
         return (

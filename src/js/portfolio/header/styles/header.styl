@@ -2,16 +2,19 @@
     background-image url("../../../../images/space.jpg")
     height 270px
     
-    +below(768px)
+    +below(767px)
+        height 500px
+    
+    +below(320px)
         height 600px
 
-.header > div
+&.hero
     padding-top 35px
     display grid
-    grid-template-columns 350px 1fr
-    align-items center
+    grid-template-columns 1fr 2fr
 
-    +below(768px)
+    +below(767px)
         grid-template-columns 1fr
-        grid-template-rows 1fr
+        grid-template-rows 2fr
+        grid-row-gap 20px
         justify-items center

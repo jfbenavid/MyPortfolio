@@ -6,7 +6,7 @@ export default class Education extends Component {
         return (
             <section className="education">
                 <h2>{this.props.educationDescription}</h2>
-                <div>
+                <div className="educationItems">
                     {
                         this.props.educations.map(item => {
                             return (

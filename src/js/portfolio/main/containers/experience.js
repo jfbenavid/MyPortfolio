@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Job from '../components/Job';
+import '../styles/experience.styl';
 
 export default class Experience extends Component {
 
     render() {
         return (
-            <section>
+            <section className="experience">
                 <h2>{this.props.experienceDescription}</h2>
                 <div>
                     {

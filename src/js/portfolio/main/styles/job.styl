@@ -3,22 +3,28 @@ linesColor = #3B3B3B
 .job
     border 1px solid linesColor
     border-radius 3px
-    padding 20px
-    margin-bottom 20px
     display grid
     grid-template-columns 300px 1fr
+    padding 20px
+    margin-bottom 20px
+
+    +below(768px)
+        grid-template-columns 1fr
 
     h3
-        margin-top 0
         font-weight 600
+        margin-top 0
     h4
     h5
-        margin 0
         font-weight 400
+        margin 0
 
 .jobFunctions
     ul
         margin 0
+
+        &:first-of-type
+            margin-bottom 15px
 
     li
         list-style-type square
@@ -26,5 +32,8 @@ linesColor = #3B3B3B
     span 
         font-weight 600
 
-    span:after
-        content ':'
+        &:after
+            content ':'
+
+.jobTitle
+    margin-bottom 15px

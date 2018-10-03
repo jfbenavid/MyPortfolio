@@ -2,14 +2,19 @@ color = #3B3B3B
 hoverColor = #f3f3f3
 
 .education
+    margin 0 15px
+
     a
         color color
 
-.education > div
+.educationItems
     margin-bottom 20px
     display grid
     grid-template-columns repeat(2, 1fr)
     grid-gap 15px
+
+    +below(768px)
+        grid-template-columns 1fr
         
 .educationItem
     padding 15px

@@ -1,20 +1,20 @@
 .header
     background-image url("../../../../images/space.jpg")
-    height 270px
+    height 290px
     
     +below(768px)
-        height 500px
+        height 520px
     
     +below(450px)
-        height 600px
+        height 620px
 
-&.hero
-    padding-top 35px
+.hero
     display grid
     grid-template-columns 1fr 2fr
+    grid-template-rows 35px 1fr
 
     +below(768px)
         grid-template-columns 1fr
-        grid-template-rows 2fr
+        grid-template-rows 35px 1fr
         grid-row-gap 20px
         justify-items center

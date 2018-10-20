@@ -8,8 +8,9 @@ import data from './portfolio/data.eng.json';
 
 const initialState = {
     data: {
-        ...data
+        ...data,
     },
+    english: true
 }
 
 const store = createStore(

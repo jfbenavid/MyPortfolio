@@ -9,7 +9,7 @@ import Main from './main/containers/main';
 import Experience from './main/containers/experience';
 import Profile from './main/components/profile';
 import Education from './main/containers/education';
-import Menu from './header/components/Menu';
+import Menu from './header/containers/Menu';
 import './styles.styl';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -18,7 +18,7 @@ class Index extends Component {
         return (
             <div>
                 <Header>
-                    {/* <Menu /> */}
+                    <Menu languageText={this.props.english} />
                     <Photo photo={imgPhoto} altPhoto="Fabian Benavides" />
                     <Info {...this.props.data.mainInfo}>
                         <Contact {...this.props.data.information} />
@@ -34,9 +34,10 @@ class Index extends Component {
     }
 }
 
-function mapStateToProps(state, props){
+function mapStateToProps(state){
     return {
-        data: state.data
+        data: state.data,
+        english: state.english
     }
 }
 

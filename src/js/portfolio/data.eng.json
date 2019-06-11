@@ -12,7 +12,7 @@
         }
     },
     "profile": {
-        "profile": "Software Developer with 3 years of experience developing web applications and windows services with c#.Net as development language; with knowledges in Python, Django, PHP and Javascript frameworks like Angular, React and WebPack.",
+        "profile": "Software Developer with 4 years of experience developing web applications and windows services with c#.Net as development language; with knowledge in Python, Django, PHP and Javascript frameworks like React and WebPack.",
         "profileDescription": "Profile"
     },
     "jobs": {
@@ -32,7 +32,7 @@
                     },
                     {
                         "id": "j412",
-                        "description": "Write unit tests to prove the functionalities before the deployes."
+                        "description": "Write unit tests to prove the functionalities before the deployees."
                     }
                 ],
                 "jobAchievements": [
@@ -132,7 +132,7 @@
                 "jobAchievements": [
                     {
                         "id": "j121",
-                        "description": "New knowledges in javascript using Telerik Kendo and JSON."
+                        "description": "New knowledge in javascript using Telerik Kendo and JSON."
                     },
                     {
                         "id": "j122",

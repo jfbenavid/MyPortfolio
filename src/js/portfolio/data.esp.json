@@ -12,7 +12,7 @@
         }
     },
     "profile": {
-        "profile": "Desarrollador de software con 3 años de experiencia en el desarrollo de aplicaciones web, servicios web y servicios de windows en lenguajes de programación como C#, Python, PHP y Javascript; con conocimientos en metodologías de desarrollo como Scrum, bases de datos como SQL Server y NoSQL y algunos frameworks javascript como Angular, React y Vue.",
+        "profile": "Desarrollador de software con 4 años de experiencia en el desarrollo de aplicaciones web, servicios web y servicios de windows en lenguajes de programación como C#, Python, PHP y Javascript; con conocimientos en metodologías de desarrollo como Scrum, bases de datos como SQL Server y NoSQL y frameworks javascript como React.",
         "profileDescription": "Perfil"
     },
     "jobs": {
@@ -42,7 +42,7 @@
                     },
                     {
                         "id": "j422",
-                        "description": "Incrementar mis conocimientos en AngularJS y obtener conocimientos en ReactJS y Webpack."
+                        "description": "Incrementar mis conocimientos en AngularJS y obtener conocimientos en Python, ReactJS y Webpack."
                     },
                     {
                         "id": "j423",

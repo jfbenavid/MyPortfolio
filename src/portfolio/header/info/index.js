@@ -1,23 +1,25 @@
 import React from 'react'
 import { FaEnvelope, FaPhone, FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { StyledInfo, H1, H3, A, SocialNetwork } from './styles'
+import { StyledInfo, H1, H3, A, SocialNetwork, Contact } from './styles'
 
 export const Info = props => (
   <StyledInfo>
     <H1>{props.name}</H1>
     <H3>{props.occupation}</H3>
-    <A href={`mailto:${props.emailDescription.email}`}>
-      <span>
-        <FaEnvelope /> {props.emailDescription.text}
-      </span>
-      {props.emailDescription.email}
-    </A>
-    <A href={`tel:${props.phoneDescription.phone.replace(/\s/g, '')}`}>
-      <span>
-        <FaPhone /> {props.phoneDescription.text}
-      </span>
-      {props.phoneDescription.phone}
-    </A>
+    <Contact>
+      <A href={`mailto:${props.emailDescription.email}`}>
+        <span>
+          <FaEnvelope /> {props.emailDescription.text}
+        </span>
+        {props.emailDescription.email}
+      </A>
+      <A href={`tel:${props.phoneDescription.phone.replace(/\s/g, '')}`}>
+        <span>
+          <FaPhone /> {props.phoneDescription.text}
+        </span>
+        {props.phoneDescription.phone}
+      </A>
+    </Contact>
     <SocialNetwork>
       <a href={props.socialNetworks.linkedin} target='_blank'>
         <FaLinkedinIn />

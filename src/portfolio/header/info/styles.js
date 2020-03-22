@@ -5,6 +5,9 @@ export const StyledInfo = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (min-width: 768px) {
+    width: calc(100% - 220px);
+  }
 `
 export const H1 = styled.h1`
   font-size: 2em;
@@ -37,9 +40,18 @@ export const A = styled.a`
 
 export const SocialNetwork = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100px;
   & > a {
     font-size: 2em;
+  }
+`
+
+export const Contact = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 330px;
   }
 `

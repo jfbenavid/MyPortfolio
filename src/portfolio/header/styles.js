@@ -9,4 +9,14 @@ export const StyledHeader = styled.header`
   flex-wrap: wrap;
   max-height: 620px;
   padding: 8px 0;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 35px 0;
+  }
+  @media (min-width: 1024px) {
+    padding: 35px 10%;
+  }
+  @media (min-width: 1440px) {
+    padding: 35px 20%;
+  }
 `

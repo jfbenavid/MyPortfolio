@@ -15,4 +15,5 @@ export const Img = styled.img`
 export const ImageDiv = styled.div`
   padding: 10px;
   width: 200px;
+  z-index: 1;
 `

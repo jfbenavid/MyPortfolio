@@ -4,9 +4,6 @@ import Header from './header'
 // import Experience from './main/containers/experience';
 // import Profile from './main/components/profile';
 // import Education from './main/containers/education';
-// import Menu from './header/containers/Menu';
-// import './styles.styl';
-// import 'font-awesome/css/font-awesome.min.css';
 
 class Index extends Component {
   render () {

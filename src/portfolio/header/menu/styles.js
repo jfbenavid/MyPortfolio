@@ -2,7 +2,15 @@ import styled from 'styled-components'
 
 export const Nav = styled.nav`
   position: absolute;
+  right: 0;
+  top: 0;
   width: 100%;
+  @media (min-width: 1024px) {
+    right: 10%;
+  }
+  @media (min-width: 1440px) {
+    right: 20%;
+  }
 `
 
 export const Ul = styled.ul`

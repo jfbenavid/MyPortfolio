@@ -4,11 +4,12 @@ const GlobalStyles = createGlobalStyle`
     body {
         margin: 0;
         font-family: 'Roboto', 'system-ui';
-        color: ${props => props.theme.colors.grey};
+        color: ${p => p.theme.colors.grey};
     }
-    #app > header {
-        background-color: red;
-        height: 620px;
+
+    a {
+        color: inherit;
+        text-decoration: none;
     }
 `
 

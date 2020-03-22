@@ -1,5 +1,5 @@
 import React from 'react'
-import { hydrate } from 'react-dom'
+import { render } from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import Index from './portfolio/index'
@@ -22,7 +22,7 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
 
-hydrate(
+render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>
       <GlobalStyles />

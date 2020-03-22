@@ -13,11 +13,12 @@
   "author": "@jfbenavid",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.1",
     "babel-eslint": "^10.0.2",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.1.0",
     "eslint": "^6.2.1",
     "html-webpack-plugin": "^3.2.0",
     "standard": "^14.0.2",
@@ -26,8 +27,9 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.9.0",
     "react-redux": "^5.1.2",
     "redux": "^4.0.5",
     "styled-components": "^5.0.1"
@@ -41,5 +43,14 @@
       "./node_modules/standard/eslintrc.json"
     ],
     "parser": "babel-eslint"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   }
 }

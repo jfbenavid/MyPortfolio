@@ -4,7 +4,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         margin: 0;
         font-family: 'Roboto', 'system-ui';
-        color: ${p => p.theme.colors.grey};
+        color: ${p => p.theme.colors.black};
     }
 
     a {

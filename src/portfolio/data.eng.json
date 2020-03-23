@@ -160,7 +160,7 @@
           "institute": "Fundación Universitaria Tecnológico Comfenalco",
           "urlFile": "https://drive.google.com/open?id=1yIcHFOFQDeOhNAymp70NKygsMB-JUpnq",
           "endingDate": "2018",
-          "instituteLogo": "./src/images/tecno-comfenalco.png"
+          "instituteLogo": "https://tecnologicocomfenalco.edu.co//wp-content/uploads/2020/01/logo.png"
         },
         {
           "id": "e5",
@@ -168,7 +168,7 @@
           "institute": "CertiProf",
           "urlFile": "https://drive.google.com/open?id=1e55Jh0mga5FgCFhSIoCCG_7u2ZicUKeH",
           "endingDate": "2018",
-          "instituteLogo": "./src/images/certiprof.png"
+          "instituteLogo": "https://www.certiprof.com/wp-content/uploads/2018/09/CertiProf-logo-sticky.png"
         },
         {
           "id": "e4",
@@ -176,7 +176,7 @@
           "institute": "Scrum Agile Institute",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpbXNVNUljMHFsYUNOUzZvNWVfOW02RGVJOVhn",
           "endingDate": "2015",
-          "instituteLogo": "./src/images/scrum-agile-institute.png"
+          "instituteLogo": "https://static.wixstatic.com/media/5c241a_614ba42cc8104155b11065c10192713b~mv2.png/v1/fill/w_523,h_103,al_c,lg_1,q_85/5c241a_614ba42cc8104155b11065c10192713b~mv2.webp"
         },
         {
           "id": "e3",
@@ -184,7 +184,7 @@
           "institute": "Microsoft",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpWVRBVExmX0tlbUE",
           "endingDate": "2014",
-          "instituteLogo": "./src/images/microsoft.png"
+          "instituteLogo": "https://logosmarcas.com/wp-content/uploads/2018/11/Microsoft-Logo.png"
         },
         {
           "id": "e2",
@@ -192,7 +192,7 @@
           "institute": "Fundación Universitaria Tecnológico Comfenalco",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpbXFmamkxYUZFUnc",
           "endingDate": "2013",
-          "instituteLogo": "./src/images/tecno-comfenalco.png"
+          "instituteLogo": "https://tecnologicocomfenalco.edu.co//wp-content/uploads/2020/01/logo.png"
         },
         {
           "id": "e1",
@@ -200,7 +200,7 @@
           "institute": "Microsoft Virtual Academy",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpMDBld3hoU3JMaEU",
           "endingDate": "2013",
-          "instituteLogo": "./src/images/microsoft.png"
+          "instituteLogo": "https://logosmarcas.com/wp-content/uploads/2018/11/Microsoft-Logo.png"
         }
       ]
     }

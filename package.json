@@ -4,8 +4,8 @@
   "description": "Portfolio where I show my professional carreer.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server"
+    "build": "webpack --mode=production",
+    "dev": "webpack-dev-server --mode=development"
   },
   "repository": {
     "type": "git"
@@ -19,6 +19,7 @@
     "@babel/preset-react": "^7.9.1",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "eslint": "^6.2.1",
     "html-webpack-plugin": "^3.2.0",
     "standard": "^14.0.2",
@@ -39,18 +40,11 @@
     "parser": "babel-eslint"
   },
   "eslintConfig": {
-    "extends": [
-      "./node_modules/standard/eslintrc.json"
-    ],
+    "extends": ["./node_modules/standard/eslintrc.json"],
     "parser": "babel-eslint"
   },
   "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ],
-    "plugins": [
-      "@babel/plugin-proposal-class-properties"
-    ]
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": ["@babel/plugin-proposal-class-properties"]
   }
 }

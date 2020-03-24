@@ -3,7 +3,7 @@ import { Jobs } from './styles'
 import { Job } from './job'
 
 export const Experience = props => (
-  <>
+  <section>
     <h2>{props.experienceDescription}</h2>
     <Jobs>
       {props.jobs.map(x => (
@@ -15,5 +15,5 @@ export const Experience = props => (
         />
       ))}
     </Jobs>
-  </>
+  </section>
 )

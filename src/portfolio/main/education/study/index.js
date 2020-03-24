@@ -1,12 +1,17 @@
 import React from 'react'
+import { StudyDiv, A, Image, Description } from './styles'
 
 export const Study = props => (
-  <a href={props.urlFile} target='_blank'>
-    <div>
-      <img src={props.instituteLogo} alt={props.institute}></img>
-      <h3>{props.title}</h3>
-      <h4>{props.institute}</h4>
-      <span>{props.endingDate}</span>
-    </div>
-  </a>
+  <A href={props.urlFile} target='_blank'>
+    <StudyDiv>
+      <div>
+        <Image src={props.instituteLogo} alt={props.institute} />
+      </div>
+      <Description>
+        <h3>{props.title}</h3>
+        <h4>{props.institute}</h4>
+        <span>{props.endingDate}</span>
+      </Description>
+    </StudyDiv>
+  </A>
 )

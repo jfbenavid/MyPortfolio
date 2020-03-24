@@ -1,13 +1,14 @@
 import React from 'react'
 import { Study } from './study'
+import { AllStudies } from './styles'
 
 export const Education = props => (
   <section>
     <h2>{props.educationDescription}</h2>
-    <div>
+    <AllStudies>
       {props.educations.map(item => {
         return <Study key={item.id} {...item} />
       })}
-    </div>
+    </AllStudies>
   </section>
 )

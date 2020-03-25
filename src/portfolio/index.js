@@ -21,14 +21,13 @@ class Index extends Component {
   }
 }
 
-const mapStateToProps = reducers => {
-  return { data: reducers.data, english: reducers.english }
-}
+const mapStateToProps = reducers => ({
+  data: reducers.data,
+  english: reducers.english
+})
 
-const mapDispatchToProps = dispatch => {
-  return {
-    appActions: bindActionCreators(appActs, dispatch)
-  }
-}
+const mapDispatchToProps = dispatch => ({
+  appActions: bindActionCreators(appActs, dispatch)
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Index)

@@ -1,23 +1,23 @@
 import React from 'react'
 import { Article, Title, Ul, Li, Span } from './styles'
 
-export const Job = props => (
+export const Job = ({ data, functionDescription, achievementsDescription }) => (
   <Article>
     <Title>
-      <h3>{props.jobTitle}</h3>
-      <h4>{props.company}</h4>
-      <h5>{props.time}</h5>
+      <h3>{data.get('jobTitle')}</h3>
+      <h4>{data.get('company')}</h4>
+      <h5>{data.get('time')}</h5>
     </Title>
-    <Span>{props.functionDescription}</Span>
+    <Span>{functionDescription}</Span>
     <Ul>
-      {props.jobFunctions.map(x => (
-        <Li key={x.id}>{x.description}</Li>
+      {data.get('jobFunctions').map(x => (
+        <Li key={x.get('id')}>{x.get('description')}</Li>
       ))}
     </Ul>
-    <Span>{props.achievementsDescription}</Span>
+    <Span>{achievementsDescription}</Span>
     <Ul>
-      {props.jobAchievements.map(x => (
-        <Li key={x.id}>{x.description}</Li>
+      {data.get('jobAchievements').map(x => (
+        <Li key={x.get('id')}>{x.get('description')}</Li>
       ))}
     </Ul>
   </Article>

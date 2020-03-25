@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyledPhoto, Img, ImageDiv } from './styles'
 
-export const Photo = props => (
+export const Photo = ({ photoInfo }) => (
   <ImageDiv>
     <StyledPhoto>
-      <Img src={props.link} alt={props.alt} />
+      <Img src={photoInfo.get('link')} alt={photoInfo.get('alt')} />
     </StyledPhoto>
   </ImageDiv>
 )

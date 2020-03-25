@@ -2,16 +2,16 @@ import React from 'react'
 import { Jobs } from './styles'
 import { Job } from './job'
 
-export const Experience = props => (
+export const Experience = ({ data }) => (
   <section>
-    <h2>{props.experienceDescription}</h2>
+    <h2>{data.get('experienceDescription')}</h2>
     <Jobs>
-      {props.jobs.map(x => (
+      {data.get('jobs').map(x => (
         <Job
-          key={x.id}
-          functionDescription={props.functionDescription}
-          achievementsDescription={props.achievementsDescription}
-          {...x}
+          key={x.get('id')}
+          functionDescription={data.get('functionDescription')}
+          achievementsDescription={data.get('achievementsDescription')}
+          data={x}
         />
       ))}
     </Jobs>

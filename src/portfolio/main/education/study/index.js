@@ -1,16 +1,16 @@
 import React from 'react'
 import { StudyDiv, A, Image, Description } from './styles'
 
-export const Study = props => (
-  <A href={props.urlFile} target='_blank'>
+export const Study = ({ data }) => (
+  <A href={data.get('urlFile')} target='_blank'>
     <StudyDiv>
       <div>
-        <Image src={props.instituteLogo} alt={props.institute} />
+        <Image src={data.get('instituteLogo')} alt={data.get('institute')} />
       </div>
       <Description>
-        <h3>{props.title}</h3>
-        <h4>{props.institute}</h4>
-        <span>{props.endingDate}</span>
+        <h3>{data.get('title')}</h3>
+        <h4>{data.get('institute')}</h4>
+        <span>{data.get('endingDate')}</span>
       </Description>
     </StudyDiv>
   </A>

@@ -2,29 +2,33 @@ import React from 'react'
 import { FaEnvelope, FaPhone, FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { StyledInfo, H1, H3, A, SocialNetwork, Contact } from './styles'
 
-export const Info = props => (
+export const Info = ({ info }) => (
   <StyledInfo>
-    <H1>{props.name}</H1>
-    <H3>{props.occupation}</H3>
+    <H1>{info.get('name')}</H1>
+    <H3>{info.get('occupation')}</H3>
     <Contact>
-      <A href={`mailto:${props.emailDescription.email}`}>
+      <A href={`mailto:${info.getIn(['emailDescription', 'email'])}`}>
         <span>
-          <FaEnvelope /> {props.emailDescription.text}
+          <FaEnvelope /> {info.getIn(['emailDescription', 'text'])}
         </span>
-        {props.emailDescription.email}
+        {info.getIn(['emailDescription', 'email'])}
       </A>
-      <A href={`tel:${props.phoneDescription.phone.replace(/\s/g, '')}`}>
+      <A
+        href={`tel:${info
+          .getIn(['phoneDescription', 'phone'])
+          .replace(/\s/g, '')}`}
+      >
         <span>
-          <FaPhone /> {props.phoneDescription.text}
+          <FaPhone /> {info.getIn(['phoneDescription', 'text'])}
         </span>
-        {props.phoneDescription.phone}
+        {info.getIn(['phoneDescription', 'phone'])}
       </A>
     </Contact>
     <SocialNetwork>
-      <a href={props.socialNetworks.linkedin} target='_blank'>
+      <a href={info.getIn(['socialNetworks', 'linkedin'])} target='_blank'>
         <FaLinkedinIn />
       </a>
-      <a href={props.socialNetworks.github} target='_blank'>
+      <a href={info.getIn(['socialNetworks', 'github'])} target='_blank'>
         <FaGithub />
       </a>
     </SocialNetwork>

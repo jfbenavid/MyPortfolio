@@ -4,10 +4,10 @@ import { Profile } from './profile'
 import { Experience } from './experience'
 import { Education } from './education'
 
-export const Main = props => (
+export const Main = ({ mainInfo }) => (
   <StyledSection>
-    <Profile {...props.profile} />
-    <Experience {...props.experience} />
-    <Education {...props.education} />
+    <Profile data={mainInfo.get('profile')} />
+    <Experience data={mainInfo.get('experience')} />
+    <Education data={mainInfo.get('education')} />
   </StyledSection>
 )

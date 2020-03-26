@@ -4,6 +4,7 @@
   "description": "Portfolio where I show my professional carreer.",
   "main": "index.js",
   "scripts": {
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server --config webpack.dev.js"
   },
@@ -21,6 +22,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "clean-webpack-plugin": "^3.0.0",
+    "cname-webpack-plugin": "^2.0.1",
     "eslint": "^6.2.1",
     "html-webpack-plugin": "^3.2.0",
     "standard": "^14.0.2",

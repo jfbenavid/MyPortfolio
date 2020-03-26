@@ -4,8 +4,21 @@ import { bindActionCreators } from 'redux'
 import Header from './header'
 import { Main } from './main'
 import * as appActs from '../state/modules/language/actions'
+import englishData from 'portfolio/data.eng.json'
+import spanishData from 'portfolio/data.esp.json'
 
 class Index extends Component {
+  componentDidUpdate () {
+    const { appActions, english, data } = this.props
+    const json = english ? englishData : spanishData
+
+    if (
+      (english && !data.get('isEnglish')) ||
+      (!english && data.get('isEnglish'))
+    )
+      appActions.updateData(json)
+  }
+
   render () {
     const { data, appActions, english } = this.props
     return (

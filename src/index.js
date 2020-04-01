@@ -7,6 +7,12 @@ import GlobalStyles from './styles/global-styles'
 import { ThemeProvider } from 'styled-components'
 import { store } from './state/store/createStore'
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('/service-worker.js')
+    .catch(error => console.log(error.message))
+}
+
 render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>

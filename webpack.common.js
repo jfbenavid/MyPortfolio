@@ -1,9 +1,17 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html'
+    }),
+    new WorkboxPlugin.GenerateSW({
+      swDest: 'service-worker.js',
+      clientsClaim: true,
+      skipWaiting: true,
+      maximumFileSizeToCacheInBytes: 30000000
     })
   ],
   module: {

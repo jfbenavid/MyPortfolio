@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const StudyDiv = styled.div`
   align-items: center;
+  animation: fadeIn 2s;
   display: flex;
   width: 100%;
 `

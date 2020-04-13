@@ -29,7 +29,8 @@ module.exports = {
                 {
                   alias: {
                     initialState: './src/state/store/initialState',
-                    portfolio: './src/portfolio'
+                    portfolio: './src/portfolio',
+                    hooks: './src/util/hooks'
                   }
                 }
               ]

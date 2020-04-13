@@ -4,7 +4,11 @@ import { StyledPhoto, Img, ImageDiv } from './styles'
 export const Photo = ({ photoInfo }) => (
   <ImageDiv>
     <StyledPhoto>
-      <Img src={photoInfo.get('link')} alt={photoInfo.get('alt')} />
+      <Img
+        rel='preconnect'
+        src={photoInfo.get('link')}
+        alt={photoInfo.get('alt')}
+      />
     </StyledPhoto>
   </ImageDiv>
 )

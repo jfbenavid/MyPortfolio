@@ -40,3 +40,7 @@ export const Span = styled.span`
     content: ':';
   }
 `
+
+export const Container = styled.div`
+  animation: fadeIn 2s;
+`

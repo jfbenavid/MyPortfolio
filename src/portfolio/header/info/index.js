@@ -25,10 +25,10 @@ export const Info = ({ info }) => (
       </A>
     </Contact>
     <SocialNetwork>
-      <a href={info.getIn(['socialNetworks', 'linkedin'])} target='_blank'>
+      <a href={info.getIn(['socialNetworks', 'linkedin'])} target='_blank' rel='noopener noreferrer'>
         <FaLinkedinIn />
       </a>
-      <a href={info.getIn(['socialNetworks', 'github'])} target='_blank'>
+      <a href={info.getIn(['socialNetworks', 'github'])} target='_blank' rel='noopener noreferrer'>
         <FaGithub />
       </a>
     </SocialNetwork>

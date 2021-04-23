@@ -5,7 +5,7 @@ export const Photo = ({ photoInfo }) => (
   <ImageDiv>
     <StyledPhoto>
       <Img
-        rel='preconnect'
+        rel='pre-connect'
         src={photoInfo.get('link')}
         alt={photoInfo.get('alt')}
       />

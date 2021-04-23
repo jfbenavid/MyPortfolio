@@ -1,9 +1,9 @@
 import React from 'react'
 import { Article, Title, Ul, Li, Span, Container } from './styles'
-import { useInstersectionToShow } from 'hooks'
+import { useIntersectionToShow } from 'hooks'
 
 export const Job = ({ data, functionDescription, achievementsDescription }) => {
-  const [show, element] = useInstersectionToShow()
+  const [show, element] = useIntersectionToShow()
 
   return (
     <Article ref={element}>

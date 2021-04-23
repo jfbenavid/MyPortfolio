@@ -1,12 +1,12 @@
 import { useEffect, useState, useRef } from 'react'
 
-export const useInstersectionToShow = () => {
+export const useIntersectionToShow = () => {
   const element = useRef(null)
   const [show, setShow] = useState(false)
 
   useEffect(() => {
     import('intersection-observer').then(() => {
-      const observer = new IntersectionObserver(entries => {
+      const observer = new window.IntersectionObserver(entries => {
         const { isIntersecting } = entries[0]
         if (isIntersecting) {
           setShow(true)

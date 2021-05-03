@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
         color: inherit;
         text-decoration: none;
     }
-    
+
     @keyframes fadeIn {
     0% {
       opacity: 0;

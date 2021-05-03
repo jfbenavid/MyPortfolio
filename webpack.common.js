@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {

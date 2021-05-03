@@ -15,8 +15,7 @@ class Index extends Component {
     if (
       (english && !data.get('isEnglish')) ||
       (!english && data.get('isEnglish'))
-    )
-      appActions.updateData(json)
+    ) { appActions.updateData(json) }
   }
 
   render () {

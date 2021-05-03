@@ -38,7 +38,7 @@
             },
             {
               "id": "j412",
-              "description": "Write unit tests to prove the functionalities before the deployees."
+              "description": "Write unit tests to prove the functionalities before the deployments."
             }
           ],
           "jobAchievements": [

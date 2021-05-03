@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import { StyledSection } from './styles'
 import { Profile } from './profile'
 import { Experience } from './experience'

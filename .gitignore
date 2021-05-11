@@ -2,3 +2,4 @@ node_modules/
 .vscode/
 yarn.lock
 6
+.eslintcache

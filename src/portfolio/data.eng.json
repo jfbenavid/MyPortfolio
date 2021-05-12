@@ -27,10 +27,32 @@
       "achievementsDescription": "Achievements",
       "jobs": [
         {
+          "id": "j5",
+          "jobTitle": "Software Developer",
+          "company": "Lean Tech",
+          "time": "Feb 2021 - Currently",
+          "jobFunctions": [
+            {
+              "id": "j511",
+              "description": "Development of new functionalities and refactoring applications developed with NodeJs."
+            },
+            {
+              "id": "j512",
+              "description": "Write unit tests to prove the functionalities before the pull requests related to the developed functionalities."
+            }
+          ],
+          "jobAchievements": [
+            {
+              "id": "j521",
+              "description": "Get knowledge about Node Js."
+            }
+          ]
+        },
+        {
           "id": "j4",
           "jobTitle": "Software Developer",
           "company": "Globant",
-          "time": "Jul 2018 - Currently",
+          "time": "Jul 2018 - Feb 2021",
           "jobFunctions": [
             {
               "id": "j411",
@@ -185,7 +207,7 @@
           "institute": "Microsoft",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpWVRBVExmX0tlbUE",
           "endingDate": "2014",
-          "instituteLogo": "https://logosmarcas.com/wp-content/uploads/2018/11/Microsoft-Logo.png"
+          "instituteLogo": "https://logodownload.org/wp-content/uploads/2014/04/microsoft-logo-2.png"
         },
         {
           "id": "e2",
@@ -201,7 +223,7 @@
           "institute": "Microsoft Virtual Academy",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpMDBld3hoU3JMaEU",
           "endingDate": "2013",
-          "instituteLogo": "https://logosmarcas.com/wp-content/uploads/2018/11/Microsoft-Logo.png"
+          "instituteLogo": "https://logodownload.org/wp-content/uploads/2014/04/microsoft-logo-2.png"
         }
       ]
     }

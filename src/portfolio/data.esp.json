@@ -30,10 +30,32 @@
       "achievementsDescription": "Logros",
       "jobs": [
         {
+          "id": "j5",
+          "jobTitle": "Desarrollador de software",
+          "company": "Lean Tech",
+          "time": "Feb 2021 - Actualmente",
+          "jobFunctions": [
+            {
+              "id": "j511",
+              "description": "Desarrollar nuevos endpoints en la api desarrollada en Node Js."
+            },
+            {
+              "id": "j512",
+              "description": "Arreglar errores de la plataforma desarrollada."
+            }
+          ],
+          "jobAchievements": [
+            {
+              "id": "j521",
+              "description": "Obtener conocimientos de Node Js."
+            }
+          ]
+        },
+        {
           "id": "j4",
           "jobTitle": "Desarrollador de software",
           "company": "Globant",
-          "time": "Jul 2018 - Actualmente",
+          "time": "Jul 2018 - Feb 2021",
           "jobFunctions": [
             {
               "id": "j411",
@@ -188,7 +210,7 @@
           "institute": "Microsoft",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpWVRBVExmX0tlbUE",
           "endingDate": "2014",
-          "instituteLogo": "https://logosmarcas.com/wp-content/uploads/2018/11/Microsoft-Logo.png"
+          "instituteLogo": "https://logodownload.org/wp-content/uploads/2014/04/microsoft-logo-2.png"
         },
         {
           "id": "e2",
@@ -204,7 +226,7 @@
           "institute": "Microsoft Virtual Academy",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpMDBld3hoU3JMaEU",
           "endingDate": "2013",
-          "instituteLogo": "https://logosmarcas.com/wp-content/uploads/2018/11/Microsoft-Logo.png"
+          "instituteLogo": "https://logodownload.org/wp-content/uploads/2014/04/microsoft-logo-2.png"
         }
       ]
     }

@@ -16,14 +16,14 @@ export const Job = ({ data, functionDescription, achievementsDescription }) => {
           </Title>
           <Span>{functionDescription}</Span>
           <Ul>
-            {data.get('jobFunctions').map(x => (
-              <Li key={x.get('id')}>{x.get('description')}</Li>
+            {data.get('jobFunctions').map(description => (
+              <Li key={description}>{description}</Li>
             ))}
           </Ul>
           <Span>{achievementsDescription}</Span>
           <Ul>
-            {data.get('jobAchievements').map(x => (
-              <Li key={x.get('id')}>{x.get('description')}</Li>
+            {data.get('jobAchievements').map(description => (
+              <Li key={description}>{description}</Li>
             ))}
           </Ul>
         </Container>

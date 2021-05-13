@@ -41,17 +41,9 @@ export const A = styled.a`
 export const SocialNetwork = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
   width: 100px;
   & > a {
     font-size: 2em;
-  }
-`
-
-export const Contact = styled.div`
-  @media (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    width: 330px;
   }
 `

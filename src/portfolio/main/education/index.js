@@ -10,10 +10,10 @@ export const Education = ({ data }) => {
     <Section ref={element}>
       {show && (
         <>
-          <h2>{data.get('educationDescription')}</h2>
+          <h2>{data.get('word')}</h2>
           <AllStudies>
-            {data.get('educations').map((item) => {
-              return <Study key={item.get('id')} data={item} />
+            {data.get('data').map(item => {
+              return <Study key={item} data={item} />
             })}
           </AllStudies>
         </>

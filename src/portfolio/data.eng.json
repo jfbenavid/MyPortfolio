@@ -101,6 +101,53 @@
         }
       ]
     },
+    "courses": {
+      "word": "Courses",
+      "data": [
+        {
+          "title": "JavaScript Basic Course",
+          "institute": "Platzi",
+          "urlFile": "https://platzi.com/p/jfbenavid/curso/1814-basico-javascript/diploma/detalle/",
+          "endingDate": "2021",
+          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+        },
+        {
+          "title": "Backend with Node.js",
+          "institute": "Platzi",
+          "urlFile": "https://platzi.com/p/jfbenavid/curso/1646-backend-nodejs/diploma/detalle/",
+          "endingDate": "2021",
+          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+        },
+        {
+          "title": "Asynchronism with JavaScript",
+          "institute": "Platzi",
+          "urlFile": "https://platzi.com/p/jfbenavid/curso/1789-asincronismo-js/diploma/detalle/",
+          "endingDate": "2020",
+          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+        },
+        {
+          "title": "Docker Course",
+          "institute": "Platzi",
+          "urlFile": "https://platzi.com/p/jfbenavid/curso/2066-docker/diploma/detalle/",
+          "endingDate": "2020",
+          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+        },
+        {
+          "title": "ASP.NET Core Course",
+          "institute": "Platzi",
+          "urlFile": "https://platzi.com/p/jfbenavid/curso/1395-course/diploma/detalle/",
+          "endingDate": "2020",
+          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+        },
+        {
+          "title": "C# with .NET Core Course",
+          "institute": "Platzi",
+          "urlFile": "https://platzi.com/p/jfbenavid/curso/1359-course/diploma/detalle/",
+          "endingDate": "2019",
+          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+        }
+      ]
+    },
     "education": {
       "word": "Education",
       "data": [

@@ -11,6 +11,7 @@ export const Main = ({ mainInfo }) => {
       <Profile data={mainInfo.get('profile')} />
       <Skills data={mainInfo.get('skills')} />
       <Experience data={mainInfo.get('experience')} />
+      <Education data={mainInfo.get('courses')} />
       <Education data={mainInfo.get('education')} />
     </StyledSection>
   )

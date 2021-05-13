@@ -8,9 +8,7 @@
     "information": {
       "name": "Jose Fabian Benavides Moreno",
       "occupation": "Software Developer",
-      "emailDescription": { "text": "E-mail", "email": "jfbenavid@gmail.com" },
-      "phoneDescription": { "text": "Phone", "phone": "+57 313 2942175" },
-      "socialNetworks": {
+      "socialMedia": {
         "linkedin": "https://www.linkedin.com/in/jfbenavid",
         "github": "https://github.com/jfbenavid"
       }
@@ -18,167 +16,95 @@
   },
   "mainInfo": {
     "profile": {
-      "profile": "Software Developer with 4 years of experience developing web applications and windows services with c#.Net as development language; with knowledge in Python, Django, PHP and Javascript frameworks like React and WebPack.",
-      "profileDescription": "Profile"
+      "data": "Jose is an Engineer who has worked in multiple projects and have 5 years of experience as a software developer; he started working with visual basic .net and then evolved into C# getting knowledge as in backend as frontend using frameworks like React; he has experience working with Node Js and Agile practices like Scrum and Kanban. For the last two years he has been working as full stack developer using C# and Node, occasionally leading different teams as tech lead support.",
+      "word": "Profile"
+    },
+    "skills": {
+      "word": "Skills",
+      "data": [
+        "C#",
+        "Javascript",
+        "Python",
+        "ASP.NET / Core",
+        "Typescript",
+        "NodeJS",
+        "React",
+        "Entity Framework / Core",
+        "SQL Server",
+        "MySQL",
+        "PostgreSql",
+        "HTML",
+        "CSS",
+        "Scrum",
+        "REST"
+      ]
     },
     "experience": {
-      "experienceDescription": "Experience",
-      "functionDescription": "Functions",
-      "achievementsDescription": "Achievements",
-      "jobs": [
+      "experienceWord": "Experience",
+      "functionWord": "Functions",
+      "achievementWord": "Achievements",
+      "data": [
         {
-          "id": "j5",
           "jobTitle": "Software Developer",
           "company": "Lean Tech",
           "time": "Feb 2021 - Currently",
           "jobFunctions": [
-            {
-              "id": "j511",
-              "description": "Development of new functionalities and refactoring applications developed with NodeJs."
-            },
-            {
-              "id": "j512",
-              "description": "Write unit tests to prove the functionalities before the pull requests related to the developed functionalities."
-            }
+            "Development of new functionalities and refactoring applications developed with NodeJs.",
+            "Write unit tests to prove the functionalities before the pull requests related to the developed functionalities."
           ],
           "jobAchievements": [
-            {
-              "id": "j521",
-              "description": "Get knowledge about Node Js."
-            }
+            "Get knowledge about Node Js."
           ]
         },
         {
-          "id": "j4",
           "jobTitle": "Software Developer",
           "company": "Globant",
           "time": "Jul 2018 - Feb 2021",
           "jobFunctions": [
-            {
-              "id": "j411",
-              "description": "Develop new functionalities and fix bugs in the platform, with web apps using Microsoft technologies."
-            },
-            {
-              "id": "j412",
-              "description": "Write unit tests to prove the functionalities before the deployments."
-            }
+            "Develop new functionalities and fix bugs in the platform, with web apps using Microsoft technologies.",
+            "Write unit tests to prove the functionalities before the deployments."
           ],
           "jobAchievements": [
-            {
-              "id": "j421",
-              "description": "Get knowledge about design patterns."
-            },
-            {
-              "id": "j422",
-              "description": "Increase my knowledge in AngularJS and get knowledge in ReactJs and Webpack."
-            },
-            {
-              "id": "j423",
-              "description": "Enhance my knowledge in CSS."
-            },
-            {
-              "id": "j424",
-              "description": "Apply my knowledge in Scrum and share it with the team."
-            }
+            "Get knowledge about design patterns.",
+            "Increase my knowledge in AngularJS and get knowledge in ReactJs and Webpack.",
+            "Enhance my knowledge in CSS.",
+            "Apply my knowledge in Scrum and share it with the team."
           ]
         },
         {
-          "id": "j3",
           "jobTitle": "Software Developer",
           "company": "Inalambria Internacional",
           "time": "Mar 2016 - Jul 2018",
           "jobFunctions": [
-            {
-              "id": "j311",
-              "description": "Develop REST APIs, with Windows services and web apps using Microsoft technologies."
-            },
-            {
-              "id": "j312",
-              "description": "Help to develop new functionalities and fix bugs in the platform(core of the business)."
-            }
+            "Develop REST APIs, with Windows services and web apps using Microsoft technologies.",
+            "Help to develop new functionalities and fix bugs in the platform(core of the business)."
           ],
           "jobAchievements": [
-            {
-              "id": "j321",
-              "description": "Create a service to get more efficient information about the core of the business."
-            },
-            {
-              "id": "j322",
-              "description": "Help with the architecture design of a new sms dispatch platform."
-            },
-            {
-              "id": "j323",
-              "description": "Help to introduce and apply software programming best practices in the area."
-            },
-            {
-              "id": "j324",
-              "description": "Paticipant developing a new component to process files to dispatch messages more efficiently."
-            }
+            "Create a service to get more efficient information about the core of the business.",
+            "Help with the architecture design of a new sms dispatch platform.",
+            "Help to introduce and apply software programming best practices in the area.",
+            "Participant developing a new component to process files to dispatch messages more efficiently."
           ]
         },
         {
-          "id": "j2",
           "jobTitle": "Degree project",
           "company": "Fundación Universitaria Tecnológico Comfenalco",
           "time": "Mar 2015 - Jan 2016",
           "jobFunctions": [
-            {
-              "id": "j211",
-              "description": "Develop a web application to manage a domotic central and use it with a prototype made with a Raspberry Pi."
-            },
-            {
-              "id": "j212",
-              "description": "The application is able to dimmer and turn the light on/off; It can send orders to some appliance like tv and air conditioners as a remote control does."
-            }
+            "Develop a web application to manage a home automation central and use it with a prototype made with a Raspberry Pi.",
+            "The application is able to dimmer and turn the light on/off; It can send orders to some appliance like tv and air conditioners as a remote control does."
           ],
           "jobAchievements": [
-            {
-              "id": "j221",
-              "description": "Learn new technologies as Python and Django."
-            },
-            {
-              "id": "j222",
-              "description": "Learn more frontend using stylus as css preprocessor."
-            }
-          ]
-        },
-        {
-          "id": "j1",
-          "jobTitle": "Software Developer Internship",
-          "company": "Sysnet LTDA",
-          "time": "Aug 2015 - Nov 2015",
-          "jobFunctions": [
-            {
-              "id": "j111",
-              "description": "Develop new views and functionalities to the business main application."
-            },
-            {
-              "id": "j112",
-              "description": "Change some things in a new web site developed in wordpress."
-            }
-          ],
-          "jobAchievements": [
-            {
-              "id": "j121",
-              "description": "New knowledge in javascript using Telerik Kendo and JSON."
-            },
-            {
-              "id": "j122",
-              "description": "Learn to develop Stored Procedures in SQL Server."
-            },
-            {
-              "id": "j123",
-              "description": "Learn about CMS as Wordpress."
-            }
+            "Learn new technologies as Python and Django.",
+            "Learn more frontend using stylus as css preprocessor."
           ]
         }
       ]
     },
     "education": {
-      "educationDescription": "Education",
-      "educations": [
+      "word": "Education",
+      "data": [
         {
-          "id": "e6",
           "title": "Systems Engineering",
           "institute": "Fundación Universitaria Tecnológico Comfenalco",
           "urlFile": "https://drive.google.com/open?id=1yIcHFOFQDeOhNAymp70NKygsMB-JUpnq",
@@ -186,7 +112,6 @@
           "instituteLogo": "https://tecnologicocomfenalco.edu.co//wp-content/uploads/2020/01/logo.png"
         },
         {
-          "id": "e5",
           "title": "Scrum Developer",
           "institute": "CertiProf",
           "urlFile": "https://drive.google.com/open?id=1e55Jh0mga5FgCFhSIoCCG_7u2ZicUKeH",
@@ -194,15 +119,13 @@
           "instituteLogo": "https://aulamatriz.edu.co/img/logo_certiprof.png"
         },
         {
-          "id": "e4",
           "title": "Scrum Master",
           "institute": "Scrum Agile Institute",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpbXNVNUljMHFsYUNOUzZvNWVfOW02RGVJOVhn",
           "endingDate": "2015",
-          "instituteLogo": "https://static.wixstatic.com/media/5c241a_614ba42cc8104155b11065c10192713b~mv2.png/v1/fill/w_523,h_103,al_c,lg_1,q_85/5c241a_614ba42cc8104155b11065c10192713b~mv2.webp"
+          "instituteLogo": "https://user-images.githubusercontent.com/8607604/118060174-bf6c3b00-b357-11eb-8ec2-80c5c6a6d113.png"
         },
         {
-          "id": "e3",
           "title": "Programming in C# specialist",
           "institute": "Microsoft",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpWVRBVExmX0tlbUE",
@@ -210,7 +133,6 @@
           "instituteLogo": "https://logodownload.org/wp-content/uploads/2014/04/microsoft-logo-2.png"
         },
         {
-          "id": "e2",
           "title": "Technologist in information systems development",
           "institute": "Fundación Universitaria Tecnológico Comfenalco",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpbXFmamkxYUZFUnc",
@@ -218,7 +140,6 @@
           "instituteLogo": "https://tecnologicocomfenalco.edu.co//wp-content/uploads/2020/01/logo.png"
         },
         {
-          "id": "e1",
           "title": "Desarrollo basado en conceptos de Ingeniería de Software",
           "institute": "Microsoft Virtual Academy",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpMDBld3hoU3JMaEU",

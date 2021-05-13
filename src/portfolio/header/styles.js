@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
   align-items: center;
-  background-color: ${p => p.theme.colors.grey};
-  color: white;
+  background-color: ${p => p.theme.colors.header};
+  color: ${p => p.theme.colors.background};
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

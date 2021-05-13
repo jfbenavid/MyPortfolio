@@ -4,13 +4,13 @@ import { Job } from './job'
 
 export const Experience = ({ data }) => (
   <section>
-    <h2>{data.get('experienceDescription')}</h2>
+    <h2>{data.get('experienceWord')}</h2>
     <Jobs>
-      {data.get('jobs').map(x => (
+      {data.get('data').map(x => (
         <Job
-          key={x.get('id')}
-          functionDescription={data.get('functionDescription')}
-          achievementsDescription={data.get('achievementsDescription')}
+          key={x}
+          functionDescription={data.get('functionWord')}
+          achievementsDescription={data.get('achievementWord')}
           data={x}
         />
       ))}

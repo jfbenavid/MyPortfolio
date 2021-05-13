@@ -3,7 +3,7 @@ import { P } from './styles'
 
 export const Profile = ({ data }) => (
   <section>
-    <h2>{data.get('profileDescription')}</h2>
-    <P>{data.get('profile')}</P>
+    <h2>{data.get('word')}</h2>
+    <P>{data.get('data')}</P>
   </section>
 )

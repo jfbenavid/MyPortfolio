@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: 
+    branches:
       - master
 
 jobs:
@@ -11,23 +11,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@master
 
       - name: Installing dependencies
         run: npm install
-        
+
+      - name: Running tests
+        run: npm test
+
       - name: Building
         run: npm run build
-        
+
   deploy:
     needs: build
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@master
-      
+
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:

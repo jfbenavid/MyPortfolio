@@ -1,19 +1,25 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { Jobs } from './styles'
 import { Job } from './job'
 
-export const Experience = ({ data }) => (
+export const Experience = ({ data: { experienceWord, data, functionWord, achievementWord } }) => (
   <section>
-    <h2>{data.get('experienceWord')}</h2>
+    <h2>{experienceWord}</h2>
     <Jobs>
-      {data.get('data').map(x => (
+      {data.map((item, index) => (
         <Job
-          key={x}
-          functionDescription={data.get('functionWord')}
-          achievementsDescription={data.get('achievementWord')}
-          data={x}
+          key={index}
+          functionDescription={functionWord}
+          achievementsDescription={achievementWord}
+          data={item}
         />
       ))}
     </Jobs>
   </section>
 )
+
+Experience.propTypes = {
+  data: PropTypes.object
+}

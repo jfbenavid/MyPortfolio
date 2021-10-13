@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Article = styled.article`
-  border: 1px solid ${p => p.theme.colors.grey};
+  background-color: rgba(0, 0, 0, .2);
   border-radius: 3px;
   box-sizing: border-box;
   margin-bottom: 15px;

@@ -1,8 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { Article, Title, Ul, Li, Span, Container } from './styles'
 import { useIntersectionToShow } from 'hooks'
 
-export const Job = ({ data, functionDescription, achievementsDescription }) => {
+export const Job = ({
+  data: { jobTitle, company, time, jobFunctions, jobAchievements },
+  functionDescription,
+  achievementsDescription
+}) => {
   const [show, element] = useIntersectionToShow()
 
   return (
@@ -10,19 +16,19 @@ export const Job = ({ data, functionDescription, achievementsDescription }) => {
       {show && (
         <Container>
           <Title>
-            <h3>{data.get('jobTitle')}</h3>
-            <h4>{data.get('company')}</h4>
-            <h5>{data.get('time')}</h5>
+            <h3>{jobTitle}</h3>
+            <h4>{company}</h4>
+            <h5>{time}</h5>
           </Title>
           <Span>{functionDescription}</Span>
           <Ul>
-            {data.get('jobFunctions').map(description => (
+            {jobFunctions.map(description => (
               <Li key={description}>{description}</Li>
             ))}
           </Ul>
           <Span>{achievementsDescription}</Span>
           <Ul>
-            {data.get('jobAchievements').map(description => (
+            {jobAchievements.map(description => (
               <Li key={description}>{description}</Li>
             ))}
           </Ul>
@@ -30,4 +36,10 @@ export const Job = ({ data, functionDescription, achievementsDescription }) => {
       )}
     </Article>
   )
+}
+
+Job.propTypes = {
+  data: PropTypes.object,
+  functionDescription: PropTypes.string,
+  achievementsDescription: PropTypes.string
 }

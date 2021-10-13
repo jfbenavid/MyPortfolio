@@ -1,13 +1,13 @@
 {
-  "isEnglish": false,
+  "isEnglish": true,
   "header": {
     "photoInfo": {
       "link": "https://avatars2.githubusercontent.com/u/8607604?s=460&u=d9ae07db5ae15d13432ee2988bbf328e4dc34d9d&v=4",
-      "alt": "Foto"
+      "alt": "Photo"
     },
     "information": {
-      "name": "José Fabian Benavides Moreno",
-      "occupation": "Desarrollador de Software",
+      "name": "Jose Fabian Benavides Moreno",
+      "occupation": "Software Developer",
       "socialMedia": {
         "linkedin": "https://www.linkedin.com/in/jfbenavid",
         "github": "https://github.com/jfbenavid"
@@ -16,11 +16,11 @@
   },
   "mainInfo": {
     "profile": {
-      "word": "Perfil",
-      "data": "Desarrollador de software con 4 años de experiencia en el desarrollo de aplicaciones web, servicios web y servicios de windows en lenguajes de programación como C#, Python, PHP y Javascript; con conocimientos en metodologías de desarrollo como Scrum, bases de datos como SQL Server y NoSQL y frameworks javascript como React."
+      "data": "Jose is an Engineer who has worked in multiple projects and have 5 years of experience as a software developer; he started working with visual basic .net and then evolved into C# getting knowledge as in backend as frontend using frameworks like React; he has experience working with Node Js and Agile practices like Scrum and Kanban. For the last two years he has been working as full stack developer using C# and Node, occasionally leading different teams as tech lead support.",
+      "word": "Profile"
     },
     "skills": {
-      "word": "Conocimientos",
+      "word": "Skills",
       "data": [
         "C#",
         "Javascript",
@@ -40,63 +40,63 @@
       ]
     },
     "experience": {
-      "experienceWord": "Experiencia Laboral",
-      "functionWord": "Funciones",
-      "achievementWord": "Logros",
+      "experienceWord": "Experience",
+      "functionWord": "Functions",
+      "achievementWord": "Achievements",
       "data": [
         {
-          "jobTitle": "Desarrollador de software",
+          "jobTitle": "Software Developer",
           "company": "Lean Tech",
-          "time": "Feb 2021 - Actualmente",
+          "time": "Feb 2021 - Currently",
           "jobFunctions": [
-            "Desarrollar nuevos endpoints en la api desarrollada en Node Js.",
-            "Arreglar errores de la plataforma desarrollada."
+            "Development of new functionalities and refactoring applications developed with NodeJs.",
+            "Write unit tests to prove the functionalities before the pull requests related to the developed functionalities."
           ],
           "jobAchievements": [
-            "Obtener conocimientos de Node Js."
+            "Get knowledge about Node Js."
           ]
         },
         {
-          "jobTitle": "Desarrollador de software",
+          "jobTitle": "Software Developer",
           "company": "Globant",
           "time": "Jul 2018 - Feb 2021",
           "jobFunctions": [
-            "Desarrollar nuevas funcionalidades y corregir errores en la plataforma del cliente con ayuda de tecnologías Microsoft.",
-            "Escribir pruebas unitarias para comprobar las funcionalidades desarrolladas antes de los despliegues."
+            "Develop new functionalities and fix bugs in the platform, with web apps using Microsoft technologies.",
+            "Write unit tests to prove the functionalities before the deployments."
           ],
           "jobAchievements": [
-            "Obtener conocimientos de patrones de diseño de software.",
-            "Incrementar mis conocimientos en AngularJS y obtener conocimientos en Python, ReactJS y Webpack.",
-            "Mejorar los conocimientos de CSS.",
-            "Aplicar y compartir mis conocimientos en Scrum con el equipo de trabajo."
+            "Get knowledge about design patterns.",
+            "Increase my knowledge in AngularJS and get knowledge in ReactJs and Webpack.",
+            "Enhance my knowledge in CSS.",
+            "Apply my knowledge in Scrum and share it with the team."
           ]
         },
         {
-          "jobTitle": "Desarrollador de software",
+          "jobTitle": "Software Developer",
           "company": "Inalambria Internacional",
           "time": "Mar 2016 - Jul 2018",
           "jobFunctions": [
-            "Desarrollar APIs REST a través de servicios de Windows y aplicaciones web con ayuda de tecnologías Microsoft.",
-            "Ayudar a desarrollar nuevas funcionalidades y arreglar bugs en la plataforma (core del negocio)."
+            "Develop REST APIs, with Windows services and web apps using Microsoft technologies.",
+            "Help to develop new functionalities and fix bugs in the platform(core of the business)."
           ],
           "jobAchievements": [
-            "Participe en el desarrollo de un nuevo componente para procesar archivos y enviar mensajes de texto de manera eficiente.",
-            "Crear un servicio para obtener información del core del negocio de manera eficiente.",
-            "Crear un servicio para monitorizar otros servicios de windows para que en caso de que se detengan por algún motivo, este lo inicie nuevamente.",
-            "Ayudar a mejorar y aplicar mejores prácticas de desarrollo de software en el area de tecnología."
+            "Create a service to get more efficient information about the core of the business.",
+            "Help with the architecture design of a new sms dispatch platform.",
+            "Help to introduce and apply software programming best practices in the area.",
+            "Participant developing a new component to process files to dispatch messages more efficiently."
           ]
         },
         {
-          "jobTitle": "Proyecto de grado",
+          "jobTitle": "Degree project",
           "company": "Fundación Universitaria Tecnológico Comfenalco",
-          "time": "Mar 2015 - Ene 2016",
+          "time": "Mar 2015 - Jan 2016",
           "jobFunctions": [
-            "Desarrollar una aplicación web para administrar una central domótica y usarla con un prototipo hecho con un Raspberry Pi.",
-            "Dicha aplicación es capaz de dimerizar, apagar y encender las luces de una casa; además de esto, es capaz de enviar órdenes a electrodomésticos como televisores y aires acondicionados tal como un control remoto."
+            "Develop a web application to manage a home automation central and use it with a prototype made with a Raspberry Pi.",
+            "The application is able to dimmer and turn the light on/off; It can send orders to some appliance like tv and air conditioners as a remote control does."
           ],
           "jobAchievements": [
-            "Aprender nuevas tecnologías como Python y Django.",
-            "Conocer y aprender de frontend utilizando Stylus como preprocesador de css."
+            "Learn new technologies as Python and Django.",
+            "Learn more frontend using stylus as css preprocessor."
           ]
         }
       ]
@@ -105,54 +105,54 @@
       "word": "Courses",
       "data": [
         {
-          "title": "Curso Basico De JavaScript",
+          "title": "JavaScript Basic Course",
           "institute": "Platzi",
           "urlFile": "https://platzi.com/p/jfbenavid/curso/1814-basico-javascript/diploma/detalle/",
           "endingDate": "2021",
-          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+          "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
         },
         {
-          "title": "Backend Con Node.js",
+          "title": "Backend with Node.js",
           "institute": "Platzi",
           "urlFile": "https://platzi.com/p/jfbenavid/curso/1646-backend-nodejs/diploma/detalle/",
           "endingDate": "2021",
-          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+          "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
         },
         {
-          "title": "Asincronismo con JavaScript",
+          "title": "Asynchronism with JavaScript",
           "institute": "Platzi",
           "urlFile": "https://platzi.com/p/jfbenavid/curso/1789-asincronismo-js/diploma/detalle/",
           "endingDate": "2020",
-          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+          "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
         },
         {
-          "title": "Curso De Docker",
+          "title": "Docker Course",
           "institute": "Platzi",
           "urlFile": "https://platzi.com/p/jfbenavid/curso/2066-docker/diploma/detalle/",
           "endingDate": "2020",
-          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+          "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
         },
         {
-          "title": "Curso de ASP.NET Core",
+          "title": "ASP.NET Core Course",
           "institute": "Platzi",
           "urlFile": "https://platzi.com/p/jfbenavid/curso/1395-course/diploma/detalle/",
           "endingDate": "2020",
-          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+          "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
         },
         {
-          "title": "Curso De C# Con .NET Core",
+          "title": "C# with .NET Core Course",
           "institute": "Platzi",
           "urlFile": "https://platzi.com/p/jfbenavid/curso/1359-course/diploma/detalle/",
           "endingDate": "2019",
-          "instituteLogo": "https://static.platzi.com/media/blog/unnamed-8089fc33-6322-4bd3-85de-1da032257d4b.png"
+          "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
         }
       ]
     },
     "education": {
-      "word": "Educación",
+      "word": "Education",
       "data": [
         {
-          "title": "Ingeniería de sistemas",
+          "title": "Systems Engineering",
           "institute": "Fundación Universitaria Tecnológico Comfenalco",
           "urlFile": "https://drive.google.com/open?id=1yIcHFOFQDeOhNAymp70NKygsMB-JUpnq",
           "endingDate": "2018",
@@ -180,7 +180,7 @@
           "instituteLogo": "https://logodownload.org/wp-content/uploads/2014/04/microsoft-logo-2.png"
         },
         {
-          "title": "Tecnología en desarrollo de sistemas de información",
+          "title": "Technologist in information systems development",
           "institute": "Fundación Universitaria Tecnológico Comfenalco",
           "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpbXFmamkxYUZFUnc",
           "endingDate": "2013",

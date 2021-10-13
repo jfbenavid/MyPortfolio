@@ -1,27 +1,33 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { StudyDiv, A, Image, Description } from './styles'
 import { useIntersectionToShow } from 'hooks'
 
-export const Study = ({ data }) => {
+export const Study = ({ data: { urlFile, institute, instituteLogo, title, endingDate } }) => {
   const [show, element] = useIntersectionToShow()
 
   return (
-    <A href={data.get('urlFile')} target='_blank' ref={element}>
+    <A href={urlFile} target='_blank' ref={element}>
       {show && (
         <StudyDiv>
           <div>
             <Image
-              src={data.get('instituteLogo')}
-              alt={data.get('institute')}
+              src={instituteLogo}
+              alt={institute}
             />
           </div>
           <Description>
-            <h3>{data.get('title')}</h3>
-            <h4>{data.get('institute')}</h4>
-            <span>{data.get('endingDate')}</span>
+            <h3>{title}</h3>
+            <h4>{institute}</h4>
+            <span>{endingDate}</span>
           </Description>
         </StudyDiv>
       )}
     </A>
   )
+}
+
+Study.propTypes = {
+  data: PropTypes.object
 }

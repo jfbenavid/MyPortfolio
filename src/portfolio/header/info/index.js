@@ -2,20 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
-import { StyledInfo, H1, H3, SocialNetwork } from './styles'
+import { StyledInfo } from './styles'
 
 export const Info = ({ info: { name, occupation, socialMedia: { linkedin, github } } }) => (
   <StyledInfo>
-    <H1>{name}</H1>
-    <H3>{occupation}</H3>
-    <SocialNetwork>
+    <h1>{name}</h1>
+    <h3>{occupation}</h3>
+    <div>
       <a href={linkedin} target='_blank' rel='noopener noreferrer'>
         <FaLinkedinIn />
       </a>
       <a href={github} target='_blank' rel='noopener noreferrer'>
         <FaGithub />
       </a>
-    </SocialNetwork>
+    </div>
   </StyledInfo>
 )
 

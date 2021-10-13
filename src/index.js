@@ -1,11 +1,11 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Provider } from 'react-redux'
-import Index from './portfolio/index'
-import { theme } from './styles/theme-provider'
-import GlobalStyles from './styles/global-styles'
 import { ThemeProvider } from 'styled-components'
-import { store } from './state/store/createStore'
+
+import Index from './portfolio/index'
+import GlobalStyles from './styles/global-styles'
+
+import { theme } from './styles/theme-provider'
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
@@ -14,11 +14,9 @@ if ('serviceWorker' in navigator) {
 }
 
 render(
-  <Provider store={store}>
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Index />
-    </ThemeProvider>
-  </Provider>,
+  <ThemeProvider theme={theme}>
+    <GlobalStyles />
+    <Index />
+  </ThemeProvider>,
   document.getElementById('app')
 )

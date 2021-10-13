@@ -10,7 +10,7 @@ import { Skills } from './skills'
 export const Main = ({ mainInfo: { profile, skills, experience, courses, education } }) => {
   return (
     <StyledSection>
-      <Profile data={profile } />
+      <Profile data={profile} />
       <Skills data={skills} />
       <Experience data={experience} />
       <Education data={courses} />

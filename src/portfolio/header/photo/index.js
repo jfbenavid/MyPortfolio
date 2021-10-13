@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { StyledPhoto, Img, ImageDiv } from './styles'
+import { ImageDiv } from './styles'
 
 export const Photo = ({ photoInfo: { link, alt } }) => (
   <ImageDiv>
-    <StyledPhoto>
-      <Img
+    <figure>
+      <img
         rel='pre-connect'
         src={link}
         alt={alt}
       />
-    </StyledPhoto>
+    </figure>
   </ImageDiv>
 )
 

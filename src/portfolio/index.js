@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react'
 import Header from './header'
 import { Main } from './main'
 
-import englishData from 'portfolio/data.eng.json'
-import spanishData from 'portfolio/data.esp.json'
+import englishData from '../../public/data.eng.json'
+import spanishData from '../../public/data.esp.json'
 
 const Index = () => {
   const [isEng, setIsEng] = useState(navigator.language.slice(0, 2) === 'en')

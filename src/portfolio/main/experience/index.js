@@ -8,12 +8,12 @@ export const Experience = ({ data: { experienceWord, data, functionWord, achieve
   <section>
     <h2>{experienceWord}</h2>
     <Jobs>
-      {data.map(x => (
+      {data.map((item, index) => (
         <Job
-          key={x}
+          key={index}
           functionDescription={functionWord}
           achievementsDescription={achievementWord}
-          data={x}
+          data={item}
         />
       ))}
     </Jobs>

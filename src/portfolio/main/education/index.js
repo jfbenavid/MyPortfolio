@@ -13,9 +13,9 @@ export const Education = ({ data: { word, data } }) => {
         <>
           <h2>{word}</h2>
           <AllStudies>
-            {data.map(item => {
-              return <Study key={item} data={item} />
-            })}
+            {data.map((item, index) => (
+              <Study key={index} data={item} />
+            ))}
           </AllStudies>
         </>
       )}

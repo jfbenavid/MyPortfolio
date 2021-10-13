@@ -19,9 +19,6 @@ jobs:
       - name: Running tests
         run: npm test
 
-      - name: Building
-        run: npm run build
-
   deploy:
     needs: build
     name: Deploy to GitHub Pages
@@ -29,6 +26,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
+
+      - name: Building
+        run: npm run build
 
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop

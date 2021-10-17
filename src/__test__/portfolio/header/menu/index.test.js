@@ -21,9 +21,9 @@ describe('<Menu />', () => {
       [false, 'English']
     ]).test('when language text is "%s"', (languageText, response) => {
       data.languageText = languageText
-      const component = shallow(<Menu {...data} />)
+      const component = mount(<Menu {...data} />)
 
-      expect(component.first('a').text()).toBe(`<GiEarthAmerica />${response}`)
+      expect(component.first('a').text()).toContain(response)
     })
 
     test('when click on the link, should work', () => {

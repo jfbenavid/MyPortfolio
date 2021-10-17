@@ -7,8 +7,8 @@ import { Menu } from './menu'
 import { Info } from './info'
 
 export const Header = ({
+  english = true,
   handleLanguageChange,
-  english,
   headerData: { photoInfo, information }
 }) => (
   <StyledHeader>
@@ -21,10 +21,10 @@ export const Header = ({
   </StyledHeader>
 )
 
-export default Header
-
 Header.propTypes = {
   handleLanguageChange: PropTypes.func,
   english: PropTypes.bool,
-  headerData: PropTypes.object
+  headerData: PropTypes.object.isRequired
 }
+
+export default Header

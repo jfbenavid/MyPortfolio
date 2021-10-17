@@ -6,11 +6,8 @@ import each from 'jest-each'
 
 describe('<Menu />', () => {
   test('Rendering with no props', () => {
-    try {
-      mount(<Menu />)
-    } catch (e) {
-      expect(e.message).toBe("Cannot read property 'handleLanguageChange' of undefined")
-    }
+    const comp = mount(<Menu />)
+    expect(comp.length).toEqual(1)
   })
 
   describe('Rendering with props', () => {
@@ -20,24 +17,24 @@ describe('<Menu />', () => {
     }
 
     each([
-      true,
-      false
-    ]).test('when language text is "%s"', (languageText) => {
+      [true, 'Español'],
+      [false, 'English']
+    ]).test('when language text is "%s"', (languageText, response) => {
       data.languageText = languageText
-
       const component = mount(<Menu {...data} />)
-      expect(component.length).toBe(1)
+
+      expect(component.first('a').text()).toContain(response)
     })
 
     test('when click on the link, should work', () => {
-      const component = shallow((<Menu {...data} />))
+      const component = shallow(<Menu {...data} />)
       component
         .find('ul').shallow()
         .find('li').shallow()
         .find('a').shallow()
         .simulate('click')
 
-      expect(data.handleLanguageChange.mock.calls.length).toEqual(1)
+      expect(data.handleLanguageChange).toHaveBeenCalled()
     })
   })
 })

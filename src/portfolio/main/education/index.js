@@ -1,6 +1,6 @@
 import React from 'react'
 import { Study } from './study'
-import { Section, AllStudies } from './styles'
+import { Section } from './styles'
 import { useIntersectionToShow } from 'hooks'
 import PropTypes from 'prop-types'
 
@@ -12,11 +12,11 @@ export const Education = ({ data: { word, data } }) => {
       {show && (
         <>
           <h2>{word}</h2>
-          <AllStudies>
+          <div>
             {data.map((item, index) => (
               <Study key={index} data={item} />
             ))}
-          </AllStudies>
+          </div>
         </>
       )}
     </Section>

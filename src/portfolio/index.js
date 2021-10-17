@@ -5,6 +5,7 @@ import { Main } from './main'
 
 import englishData from '../../public/data.eng.json'
 import spanishData from '../../public/data.esp.json'
+import ErrorBoundary from '../util/common/error-boundary'
 
 const Index = () => {
   const [isEng, setIsEng] = useState(navigator.language.slice(0, 2) === 'en')
@@ -17,14 +18,14 @@ const Index = () => {
   }, [isEng])
 
   return (
-    <>
+    <ErrorBoundary>
       <Header
         headerData={data && data.header}
         handleLanguageChange={setIsEng}
         english={isEng}
       />
       <Main mainInfo={data.mainInfo} />
-    </>
+    </ErrorBoundary>
   )
 }
 

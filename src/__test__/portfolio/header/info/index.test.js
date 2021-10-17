@@ -2,29 +2,26 @@ import 'jsdom-global/register'
 import React from 'react'
 import { mount } from 'enzyme'
 import { Info } from '../../../../portfolio/header/info'
+import ErrorBoundary from '../../../../util/common/error-boundary'
 
 describe('<Info />', () => {
   test('Rendering with no props', () => {
-    try {
-      mount(<Info />)
-    } catch (e) {
-      expect(e.message).toBe("Cannot read property 'name' of undefined")
-    }
+    console.error = jest.fn()
+    mount(<ErrorBoundary><Info /></ErrorBoundary>)
+    expect(console.error).toHaveBeenCalled()
   })
 
   test('Rendering with props', () => {
     const data = {
-      info: {
-        name: 'test',
-        occupation: 'test',
-        socialMedia: {
-          linkedIn: {},
-          github: {}
-        }
+      name: 'test',
+      occupation: 'test',
+      socialMedia: {
+        linkedIn: {},
+        github: {}
       }
     }
 
-    const component = mount(<Info {...data} />)
+    const component = mount(<Info info={data} />)
     expect(component.length).toBe(1)
   })
 })

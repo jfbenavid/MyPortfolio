@@ -2,15 +2,14 @@ import 'jsdom-global/register'
 import React from 'react'
 import { mount } from 'enzyme'
 import { Header } from '../../../portfolio/header'
-import { ThemeProvider } from 'styled-components'
+import ThemeMock from '../../../__mocks__/theme-mock'
+import ErrorBoundary from '../../../util/common/error-boundary'
 
 describe('<Header />', () => {
   test('Rendering with no props', () => {
-    try {
-      mount(<Header />)
-    } catch (e) {
-      expect(e.message).toBe("Cannot read property 'photoInfo' of undefined")
-    }
+    console.error = jest.fn()
+    mount(<ErrorBoundary><Header /></ErrorBoundary>)
+    expect(console.error).toHaveBeenCalled()
   })
 
   test('Rendering with props', () => {
@@ -33,18 +32,10 @@ describe('<Header />', () => {
       }
     }
 
-    const theme = {
-      colors: {
-        header: 'white',
-        background: 'cyan',
-        text: 'red'
-      }
-    }
-
     const component = mount(
-      <ThemeProvider theme={theme}>
+      <ThemeMock>
         <Header {...data} />
-      </ThemeProvider>)
+      </ThemeMock>)
     expect(component.length).toBe(1)
   })
 })

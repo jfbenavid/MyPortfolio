@@ -1,4 +1,6 @@
-import 'jsdom-global/register'
+/**
+ * @jest-environment jsdom
+ */
 import React from 'react'
 import { mount } from 'enzyme'
 import ErrorBoundary from '../../../../../util/common/error-boundary'

@@ -72,7 +72,7 @@
   },
   "jest": {
     "setupFilesAfterEnv": [
-      "<rootDir>/src/__test__/setupTest.js"
+      "<rootDir>/src/__test__/setup.js"
     ],
     "moduleNameMapper": {
       "hooks": "<rootDir>/src/util/hooks/index.js"

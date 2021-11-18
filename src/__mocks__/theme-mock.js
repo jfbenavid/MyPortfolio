@@ -3,11 +3,9 @@ import { ThemeProvider } from 'styled-components'
 import PropTypes from 'prop-types'
 
 const theme = {
-  colors: {
-    header: 'white',
-    background: 'cyan',
-    text: 'red'
-  }
+  header: 'white',
+  background: 'cyan',
+  text: 'red'
 }
 
 const ThemeMock = props => (

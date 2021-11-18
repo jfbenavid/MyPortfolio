@@ -4,8 +4,8 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Roboto', 'system-ui';
-    color: ${p => p.theme.colors.text};
-    background-color: ${p => p.theme.colors.background}
+    color: ${p => p.theme.text};
+    background-color: ${p => p.theme.background}
   }
 
   a {

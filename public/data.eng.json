@@ -46,8 +46,20 @@
       "data": [
         {
           "jobTitle": "Software Developer",
+          "company": "Mas Global Consulting",
+          "time": "Jul 2021 - Currently",
+          "jobFunctions": [
+            "Development of new functionalities and refactoring applications developed with .Net Core and Angular.",
+            "Create unit tests to increase the code coverage of the applications."
+          ],
+          "jobAchievements": [
+            "Get knowledge about Angular."
+          ]
+        },
+        {
+          "jobTitle": "Software Developer",
           "company": "Lean Tech",
-          "time": "Feb 2021 - Currently",
+          "time": "Feb 2021 - Jul 2021",
           "jobFunctions": [
             "Development of new functionalities and refactoring applications developed with NodeJs.",
             "Write unit tests to prove the functionalities before the pull requests related to the developed functionalities."

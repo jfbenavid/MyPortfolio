@@ -46,8 +46,20 @@
       "data": [
         {
           "jobTitle": "Desarrollador de software",
+          "company": "Mas Global Consulting",
+          "time": "Jul 2021 - Actualmente",
+          "jobFunctions": [
+            "Desarrollar nuevas funcionalidades y mejoras relacionadas con el frontend y el backend de algunas aplicaciones del cliente.",
+            "Crear pruebas unitarias para mejorar la cobertura de codigo."
+          ],
+          "jobAchievements": [
+            "Obtener conocimientos en Angular."
+          ]
+        },
+        {
+          "jobTitle": "Desarrollador de software",
           "company": "Lean Tech",
-          "time": "Feb 2021 - Actualmente",
+          "time": "Feb 2021 - Jul 2021",
           "jobFunctions": [
             "Desarrollar nuevos endpoints en la api desarrollada en Node Js.",
             "Arreglar errores de la plataforma desarrollada."

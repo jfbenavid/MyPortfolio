@@ -16,32 +16,44 @@
   },
   "mainInfo": {
     "profile": {
-      "data": "Jose is an Engineer who has worked in multiple projects and have 5 years of experience as a software developer; he started working with visual basic .net and then evolved into C# getting knowledge as in backend as frontend using frameworks like React; he has experience working with Node Js and Agile practices like Scrum and Kanban. For the last two years he has been working as full stack developer using C# and Node, occasionally leading different teams as tech lead support.",
+      "data": "I am a Systems Engineer with six years of experience as a software developer, who has worked on multiple software development projects for different clients. I started working with Visual Basic.NET and then evolved into C# in the backend while I worked with ASP.NET/Core, Entity Framework, and Windows Services, and I also have been working with Javascript, React.js, and Angular in the frontend. I am also willing to relocate and learn new technologies and stacks. For the last five years,  Agile practices like SCRUM and Kanban have been part of my working days, and I also have been working as a full-stack developer leading different teams as a technical leader.",
       "word": "Profile"
     },
     "skills": {
       "word": "Skills",
       "data": [
         "C#",
-        "Javascript",
+        ".Net Framework / Core",
+        "ASP.Net / Core",
+        "Entity Framework / Core",
         "Python",
-        "ASP.NET / Core",
+        "Django",
+        "Javascript",
         "Typescript",
         "NodeJS",
         "React",
-        "Entity Framework / Core",
+        "Webpack",
+        "Angular",
         "SQL Server",
         "MySQL",
-        "PostgreSql",
+        "PostgreSQL",
         "HTML",
         "CSS",
         "Scrum",
-        "REST"
+        "REST",
+        "SOA",
+        "Git",
+        "TFS",
+        "Docker",
+        "Jenkins",
+        "TDD",
+        "SOLID",
+        "Design Patterns"
       ]
     },
     "experience": {
       "experienceWord": "Experience",
-      "functionWord": "Functions",
+      "functionWord": "Responsibilities",
       "achievementWord": "Achievements",
       "data": [
         {
@@ -49,11 +61,12 @@
           "company": "Mas Global Consulting",
           "time": "Jul 2021 - Currently",
           "jobFunctions": [
-            "Development of new functionalities and refactoring applications developed with .Net Core and Angular.",
-            "Create unit tests to increase the code coverage of the applications."
+            "Building new functionalities and refactoring web applications developed with .Net Core and Angular.",
+            "Testing functionalities before releasing any code.",
+            "Reading and writing code to improve applications performance."
           ],
           "jobAchievements": [
-            "Get knowledge about Angular."
+            "Learning Angular."
           ]
         },
         {
@@ -61,11 +74,26 @@
           "company": "Lean Tech",
           "time": "Feb 2021 - Jul 2021",
           "jobFunctions": [
-            "Development of new functionalities and refactoring applications developed with NodeJs.",
-            "Write unit tests to prove the functionalities before the pull requests related to the developed functionalities."
+            "Developing new functionalities and refactoring applications developed by NodeJs.",
+            "Writing unit tests related to the functionalities before any release."
           ],
           "jobAchievements": [
-            "Get knowledge about Node Js."
+            "Leading a software development team."
+          ]
+        },
+        {
+          "jobTitle": "Software Developer",
+          "company": "Inalambria Internacional",
+          "time": "Dec 2020 - Oct 2021",
+          "jobFunctions": [
+            "Analyzing, developing and testing multiple applications using Microsoft technologies.",
+            "Integrating hardware and software to create an application."
+          ],
+          "jobAchievements": [
+            "Creating a full application as a freelance.",
+            "Learning best practices related with tests and TDD.",
+            "Applying micro services to the project.",
+            "Utilizing tools for inspection of code like Sonarqube."
           ]
         },
         {
@@ -73,14 +101,14 @@
           "company": "Globant",
           "time": "Jul 2018 - Feb 2021",
           "jobFunctions": [
-            "Develop new functionalities and fix bugs in the platform, with web apps using Microsoft technologies.",
-            "Write unit tests to prove the functionalities before the deployments."
+            "Evolving web applications, created with Microsoft technologies.",
+            "Improving code before any release."
           ],
           "jobAchievements": [
-            "Get knowledge about design patterns.",
-            "Increase my knowledge in AngularJS and get knowledge in ReactJs and Webpack.",
-            "Enhance my knowledge in CSS.",
-            "Apply my knowledge in Scrum and share it with the team."
+            "Leading development teams.",
+            "Gaining knowledge about design patterns",
+            "Increasing knowledge in AngularJS, ReactJs, Webpack, and CSS.",
+            "Applying my knowledge in Scrum and sharing it with the team."
           ]
         },
         {
@@ -88,27 +116,14 @@
           "company": "Inalambria Internacional",
           "time": "Mar 2016 - Jul 2018",
           "jobFunctions": [
-            "Develop REST APIs, with Windows services and web apps using Microsoft technologies.",
-            "Help to develop new functionalities and fix bugs in the platform(core of the business)."
+            "Developing REST APIs and web apps with Windows services and web apps using Microsoft technologies.",
+            "Bug fixing the core of the business."
           ],
           "jobAchievements": [
-            "Create a service to get more efficient information about the core of the business.",
-            "Help with the architecture design of a new sms dispatch platform.",
-            "Help to introduce and apply software programming best practices in the area.",
-            "Participant developing a new component to process files to dispatch messages more efficiently."
-          ]
-        },
-        {
-          "jobTitle": "Degree project",
-          "company": "Fundación Universitaria Tecnológico Comfenalco",
-          "time": "Mar 2015 - Jan 2016",
-          "jobFunctions": [
-            "Develop a web application to manage a home automation central and use it with a prototype made with a Raspberry Pi.",
-            "The application is able to dimmer and turn the light on/off; It can send orders to some appliance like tv and air conditioners as a remote control does."
-          ],
-          "jobAchievements": [
-            "Learn new technologies as Python and Django.",
-            "Learn more frontend using stylus as css preprocessor."
+            "Creating a service to get more information efficiently from the core of the business.",
+            "Participating in the architecture design of a new SMS dispatch platform.",
+            "Introducing and applying software programming best practices.",
+            "Developing a new component to process files to dispatch messages more efficiently."
           ]
         }
       ]
@@ -164,7 +179,7 @@
       "word": "Education",
       "data": [
         {
-          "title": "Systems Engineering",
+          "title": "Systems Engineering BA. Developing a domotic central prototype with a Raspberry Pi as thesis.",
           "institute": "Fundación Universitaria Tecnológico Comfenalco",
           "urlFile": "https://drive.google.com/open?id=1yIcHFOFQDeOhNAymp70NKygsMB-JUpnq",
           "endingDate": "2018",

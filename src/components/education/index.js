@@ -8,7 +8,7 @@ export const Education = ({ data: { word, data } }) => {
   const [show, element] = useIntersectionToShow()
 
   return (
-    <Section ref={element}>
+    <Section id={`${word}`} ref={element}>
       {show && (
         <>
           <h2>{word}</h2>

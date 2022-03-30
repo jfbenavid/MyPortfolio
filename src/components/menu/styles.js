@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Ul = styled.ul`
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, .025);
   align-items: center;
   display: flex;
   justify-content: flex-end;

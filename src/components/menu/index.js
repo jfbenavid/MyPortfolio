@@ -16,7 +16,7 @@ export const Menu = (props) => {
           <Hamburger size={18} toggled={isOpen} toggle={setIsOpen} />
         </li>
         {isOpen && sections.map(section =>
-          <li key={section}><a href={`#${section}`}>{mainInfo[section].word}</a></li>
+          <li key={section}><a href={`#${mainInfo[section].word}`}>{mainInfo[section].word}</a></li>
         )}
         <li>
           <a href='#' onClick={() => handleLanguageChange(!isEnglish)}>

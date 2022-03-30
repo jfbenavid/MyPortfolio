@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import { P } from './styles'
 
 export const Profile = ({ data: { word, data } }) => (
-  <section>
+  <section id={word}>
     <h2>{word}</h2>
     <P>{data}</P>
   </section>

@@ -5,7 +5,7 @@ import { Jobs } from './styles'
 import { Job } from '../job'
 
 export const Experience = ({ data: { word, data, functionWord, achievementWord } }) => (
-  <section>
+  <section id={word}>
     <h2>{word}</h2>
     <Jobs>
       {data.map((item, index) => (

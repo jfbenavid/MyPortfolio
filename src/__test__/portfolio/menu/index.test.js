@@ -3,7 +3,7 @@
  */
 import React from 'react'
 import { mount, shallow } from 'enzyme'
-import { Menu } from '../../../../portfolio/header/menu'
+import { Menu } from '../../../portfolio/menu'
 import each from 'jest-each'
 
 describe('<Menu />', () => {

@@ -3,8 +3,8 @@
  */
 import React from 'react'
 import { mount } from 'enzyme'
-import { Info } from '../../../../portfolio/header/info'
-import ErrorBoundary from '../../../../util/common/error-boundary'
+import { Info } from '../../../portfolio/info'
+import ErrorBoundary from '../../../util/common/error-boundary'
 
 describe('<Info />', () => {
   test('Rendering with no props', () => {

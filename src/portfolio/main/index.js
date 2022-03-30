@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { StyledSection } from './styles'
-import { Profile } from './profile'
-import { Experience } from './experience'
-import { Education } from './education'
-import { Skills } from './skills'
+import { Profile } from '../profile'
+import { Experience } from '../experience'
+import { Education } from '../education'
+import { Skills } from '../skills'
 
 export const Main = ({ mainInfo: { profile, skills, experience, courses, education } }) => {
   return (

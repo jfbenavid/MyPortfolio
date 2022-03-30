@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { Jobs } from './styles'
-import { Job } from './job'
+import { Job } from '../job'
 
 export const Experience = ({ data: { experienceWord, data, functionWord, achievementWord } }) => (
   <section>

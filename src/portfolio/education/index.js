@@ -1,5 +1,5 @@
 import React from 'react'
-import { Study } from './study'
+import { Study } from '../study'
 import { Section } from './styles'
 import { useIntersectionToShow } from 'hooks'
 import PropTypes from 'prop-types'

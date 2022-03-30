@@ -5,6 +5,7 @@ export const Nav = styled.nav`
   right: 0;
   top: 0;
   width: 100%;
+
   @media (min-width: 1024px) {
     right: 10%;
   }

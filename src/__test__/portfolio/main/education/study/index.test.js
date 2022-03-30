@@ -4,7 +4,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import ErrorBoundary from '../../../../../util/common/error-boundary'
-import { Study } from '../../../../../portfolio/main/education/study'
+import { Study } from '../../../../../portfolio/study'
 
 describe('<Study />', () => {
   test('Rendering with no props', () => {

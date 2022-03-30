@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { StyledHeader } from './styles'
-import { Photo } from './photo'
-import { Menu } from './menu'
-import { Info } from './info'
+import { Photo } from '../photo'
+import { Menu } from '../menu'
+import { Info } from '../info'
 
 export const Header = ({
   english = true,

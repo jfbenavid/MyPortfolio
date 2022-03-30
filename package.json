@@ -51,6 +51,7 @@
     "workbox-webpack-plugin": "^6.5.0"
   },
   "dependencies": {
+    "hamburger-react": "^2.4.1",
     "intersection-observer": "^0.12.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",

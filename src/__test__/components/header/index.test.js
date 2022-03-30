@@ -3,7 +3,7 @@
  */
 import React from 'react'
 import { mount } from 'enzyme'
-import { Header } from '../../../portfolio/header'
+import { Header } from '../../../components/header'
 import ThemeMock from '../../../__mocks__/theme-mock'
 import ErrorBoundary from '../../../util/common/error-boundary'
 
@@ -17,20 +17,9 @@ describe('<Header />', () => {
   test('Rendering with props', () => {
     const data = {
       handleLanguageChange: jest.fn(),
-      english: true,
-      headerData: {
-        information: {
-          name: 'test',
-          occupation: 'test',
-          socialMedia: {
-            linkedin: 'test',
-            github: 'test'
-          }
-        },
-        photoInfo: {
-          link: 'test',
-          alt: 'test'
-        }
+      isEnglish: true,
+      mainInfo: {
+        test: {}
       }
     }
 

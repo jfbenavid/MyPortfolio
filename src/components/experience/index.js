@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 import { Jobs } from './styles'
 import { Job } from '../job'
 
-export const Experience = ({ data: { experienceWord, data, functionWord, achievementWord } }) => (
+export const Experience = ({ data: { word, data, functionWord, achievementWord } }) => (
   <section>
-    <h2>{experienceWord}</h2>
+    <h2>{word}</h2>
     <Jobs>
       {data.map((item, index) => (
         <Job

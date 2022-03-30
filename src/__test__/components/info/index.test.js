@@ -3,23 +3,27 @@
  */
 import React from 'react'
 import { mount } from 'enzyme'
-import { Photo } from '../../../portfolio/photo'
+import { Info } from '../../../components/info'
 import ErrorBoundary from '../../../util/common/error-boundary'
 
-describe('<Photo />', () => {
+describe('<Info />', () => {
   test('Rendering with no props', () => {
     console.error = jest.fn()
-    mount(<ErrorBoundary><Photo /></ErrorBoundary>)
+    mount(<ErrorBoundary><Info /></ErrorBoundary>)
     expect(console.error).toHaveBeenCalled()
   })
 
   test('Rendering with props', () => {
     const data = {
-      link: 'test',
-      alt: 'test'
+      name: 'test',
+      occupation: 'test',
+      socialMedia: {
+        linkedIn: {},
+        github: {}
+      }
     }
 
-    const component = mount(<Photo photoInfo={data} />)
+    const component = mount(<Info info={data} />)
     expect(component.length).toBe(1)
   })
 })

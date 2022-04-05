@@ -2,29 +2,34 @@ import React, { useState } from 'react'
 import propTypes from 'prop-types'
 import { Squeeze as Hamburger } from 'hamburger-react'
 
-import { Ul } from './styles'
+import { Nav, Ul } from './styles'
 
 export const Menu = (props) => {
   const { handleLanguageChange, isEnglish, mainInfo } = props
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const sections = Object.keys(mainInfo)
 
   return (
-    <nav>
-      <Ul open={isOpen}>
-        <li className='burger'>
-          <Hamburger size={18} toggled={isOpen} toggle={setIsOpen} />
-        </li>
-        {isOpen && sections.map(section =>
-          <li key={section}><a href={`#${mainInfo[section].word}`}>{mainInfo[section].word}</a></li>
-        )}
+    <Nav className='container'>
+      <ul>
         <li>
           <a href='#' onClick={() => handleLanguageChange(!isEnglish)}>
             {isEnglish ? 'Español' : 'English'}
           </a>
         </li>
-      </Ul>
-    </nav>
+        <li>
+          <Hamburger size={18} toggled={isOpen} toggle={setIsOpen} />
+        </li>
+        <Ul isOpen={isOpen}>{
+          sections.reverse().map(section =>
+            <li key={section}><a href={`#${mainInfo[section].word}`}>{mainInfo[section].word}</a></li>
+          )}
+          <li>
+            <Hamburger size={18} toggled={isOpen} toggle={setIsOpen} />
+          </li>
+        </Ul>
+      </ul>
+    </Nav>
   )
 }
 

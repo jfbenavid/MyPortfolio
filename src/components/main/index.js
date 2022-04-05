@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { StyledDiv } from './styles'
 import { Profile } from '../profile'
 import { Experience } from '../experience'
 import { Education } from '../education'
@@ -13,13 +12,13 @@ export const Main = (props) => {
   return (
     <>
       <Header {...props} />
-      <StyledDiv>
+      <div className='container'>
         <Profile data={profile} />
         <Skills data={skills} />
         <Experience data={experience} />
         <Education data={courses} />
         <Education data={education} />
-      </StyledDiv>
+      </div>
     </>
   )
 }

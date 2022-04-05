@@ -21,6 +21,14 @@ const GlobalStyles = createGlobalStyle`
       opacity: 1;
     }
   }
+
+  .container {
+    padding: 0 15px;
+
+    @media (min-width: 1024px) {
+      padding: 0 5%;
+    }
+  }
 `
 
 export default GlobalStyles

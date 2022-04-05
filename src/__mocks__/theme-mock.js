@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const theme = {
   header: 'white',
-  background: 'cyan',
+  background: { main: 'cyan', second: 'brown' },
   text: 'red'
 }
 

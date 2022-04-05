@@ -60,7 +60,6 @@ export const Ul = styled.ul`
     padding: 10px 5px;
 
     &:last-child {
-      align-self: flex-end;
       padding: 0;
     }
 

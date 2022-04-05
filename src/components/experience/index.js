@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { Title } from '../../util/styles'
 import { Jobs } from './styles'
 import { Job } from '../job'
 
 export const Experience = ({ data: { word, data, functionWord, achievementWord } }) => (
   <section id={word}>
-    <h2>{word}</h2>
+    <Title>{word}</Title>
     <Jobs>
       {data.map((item, index) => (
         <Job

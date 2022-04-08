@@ -3,18 +3,21 @@ import PropTypes from 'prop-types'
 
 import { ImageDiv } from './styles'
 
-export const Photo = ({ photoInfo: { link, alt } }) => (
+export const Photo = ({ link, alt }) => (
   <ImageDiv>
-    <figure>
-      <img
-        rel='pre-connect'
-        src={link}
-        alt={alt}
-      />
-    </figure>
+    <div>
+      <figure>
+        <img
+          rel='pre-connect'
+          src={link}
+          alt={alt}
+        />
+      </figure>
+    </div>
   </ImageDiv>
 )
 
 Photo.propTypes = {
-  photoInfo: PropTypes.object
+  link: PropTypes.string,
+  alt: PropTypes.string
 }

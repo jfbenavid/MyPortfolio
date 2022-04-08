@@ -23,7 +23,7 @@ describe('<Info />', () => {
       }
     }
 
-    const component = mount(<Info info={data} />)
+    const component = mount(<Info {...data} />)
     expect(component.length).toBe(1)
   })
 })

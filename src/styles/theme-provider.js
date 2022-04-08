@@ -3,6 +3,6 @@ export const theme = {
   header: 'rgb(149, 153, 153)',
   background: {
     main: 'white',
-    second: 'rgba(0, 0, 0, .025)'
+    second: 'rgba(0, 0, 0, .05)'
   }
 }

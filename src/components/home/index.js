@@ -6,7 +6,7 @@ import { ContainerDiv } from './styles'
 import { Info } from '../info'
 
 export const Home = ({ photoInfo, information }) => (
-  <ContainerDiv>
+  <ContainerDiv id="home">
     <Photo {...photoInfo} />
     <Info {...information} />
   </ContainerDiv>

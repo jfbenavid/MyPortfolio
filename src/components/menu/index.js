@@ -25,6 +25,9 @@ export const Menu = (props) => {
             <li key={section}><a href={`#${mainInfo[section].word}`}>{mainInfo[section].word}</a></li>
           )}
           <li>
+            <a href='#home'>{isEnglish ? 'Home' : 'Hogar'}</a>
+          </li>
+          <li>
             <Hamburger size={18} toggled={isOpen} toggle={setIsOpen} />
           </li>
         </Ul>

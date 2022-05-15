@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Nav = styled.nav`
   background-color: ${p => p.theme.background.second};
+  overflow-x: scroll;
   text-transform: uppercase;
 
   & > ul {
@@ -24,6 +25,7 @@ export const Nav = styled.nav`
     font-size: .8em;
     list-style-type: none;
     margin: 0 5px;
+    white-space: nowrap;
 
     & > a {
       align-items: center;

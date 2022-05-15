@@ -6,7 +6,6 @@
       "alt": "Foto"
     },
     "information": {
-      "name": "José Fabian Benavides Moreno",
       "occupation": "Soy Desarrollador de Software",
       "socialMedia": {
         "linkedin": "https://www.linkedin.com/in/jfbenavid",
@@ -16,7 +15,8 @@
   },
   "mainInfo": {
     "profile": {
-      "word": "Perfil",
+      "name": "Fabian Benavides",
+      "word": "Sobre mi",
       "data": "Desarrollador de software con seis años de experiencia en desarrollo de aplicaciones web, servicios web y servicios de Windows, usando lenguajes de programación como Visual Basic y C#.Net y Javascript; con conocimientos en Python y SQL; tambien certificado como SCRUM Master y SCRUM Developer y, adicionalmente, con diferentes cursos en tecnologías de desarrollo como Javascript, Webpack, React, y Redux."
     },
     "skills": {

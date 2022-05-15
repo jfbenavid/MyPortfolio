@@ -6,7 +6,6 @@
       "alt": "Photo"
     },
     "information": {
-      "name": "Jose Fabian Benavides Moreno",
       "occupation": "I'm a Software Developer",
       "socialMedia": {
         "linkedin": "https://www.linkedin.com/in/jfbenavid",
@@ -16,8 +15,9 @@
   },
   "mainInfo": {
     "profile": {
+      "name": "Fabian Benavides",
       "data": "I am a Systems Engineer with six years of experience as a software developer, who has worked on multiple software development projects for different clients. I started working with Visual Basic.NET and then evolved into C# in the backend while I worked with ASP.NET/Core, Entity Framework, and Windows Services, and I also have been working with Javascript, React.js, and Angular in the frontend. I am also willing to relocate and learn new technologies and stacks. For the last five years,  Agile practices like SCRUM and Kanban have been part of my working days, and I also have been working as a full-stack developer leading different teams as a technical leader.",
-      "word": "Profile"
+      "word": "About"
     },
     "skills": {
       "word": "Skills",

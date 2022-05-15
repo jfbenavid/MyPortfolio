@@ -61,6 +61,10 @@ export const Ul = styled.ul`
 
     &:last-child {
       padding: 0;
+
+      @media (min-width: 769px) {
+        display: none;
+      }
     }
 
     &:not(:last-child):after {

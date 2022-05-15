@@ -7,7 +7,16 @@ export const ImageDiv = styled.div`
   display: flex;
   height: calc(100vw - 40px);
   justify-content: center;
+  max-height: 487px;
+  max-width: 487px;
   width: calc(100vw - 40px);
+
+  @media (min-width: 769px) {
+    height: 40vw;
+    max-height: 380px;
+    max-width: 380px;
+    width: 40vw;
+  }
 
   & > div {
     align-items: center;

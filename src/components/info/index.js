@@ -4,10 +4,9 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 import { StyledInfo } from './styles'
 
-export const Info = ({ name, occupation, socialMedia: { linkedin, github } }) => (
+export const Info = ({ occupation, socialMedia: { linkedin, github } }) => (
   <StyledInfo>
-    <h1>{name}</h1>
-    <h3>{occupation}</h3>
+    <h1>{occupation}</h1>
     <div>
       <a href={linkedin} target='_blank' rel='noopener noreferrer'>
         <FaLinkedinIn />

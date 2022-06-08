@@ -8,7 +8,7 @@ export const StyledInfo = styled.div`
   max-width: 450px;
 
   & > h1 {
-    font-size: 4em;
+    font-size: 5em;
     margin: 0;
     text-align: center;
   }

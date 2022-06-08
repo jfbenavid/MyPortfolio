@@ -29,10 +29,10 @@ export const ImageDiv = styled.div`
 
     & > figure {
       border-radius: 50%;
-      height: calc(100% - 10px);
+      height: calc(100% - 25px);
       margin: 0;
       overflow: hidden;
-      width: calc(100% - 10px);
+      width: calc(100% - 25px);
 
       & > img {
         width: 100%;

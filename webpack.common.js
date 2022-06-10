@@ -20,8 +20,6 @@ module.exports = {
                 'module-resolver',
                 {
                   alias: {
-                    initialState: './src/state/store/initialState',
-                    portfolio: './src/portfolio',
                     hooks: './src/util/hooks'
                   }
                 }

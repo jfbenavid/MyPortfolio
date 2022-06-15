@@ -6,7 +6,7 @@ import { StyledInfo } from './styles'
 
 export const Info = ({ occupation, socialMedia: { linkedin, github } }) => (
   <StyledInfo>
-    <h1>{occupation}</h1>
+    <h2>{occupation}</h2>
     <div>
       <a href={linkedin} target='_blank' rel='noopener noreferrer'>
         <FaLinkedinIn />

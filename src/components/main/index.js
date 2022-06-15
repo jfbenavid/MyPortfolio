@@ -16,6 +16,7 @@ export const Main = (props) => {
       <Home {...header}/>
       <div className='container'>
         <Section word={profile.word}>
+          <p>{profile.greetings} <h1>{profile.name}</h1></p>
           <p>{profile.data}</p>
         </Section>
         <Section word={skills.word}>

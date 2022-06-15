@@ -7,18 +7,18 @@ export const StyledInfo = styled.div`
   justify-content: center;
   max-width: 450px;
 
-  & > h1 {
+  & h2 {
     font-size: 5em;
     margin: 0;
     text-align: center;
   }
 
-  & > div {
+  & div {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     width: 150px;
-    & > a {
+    & a {
       font-size: 3em;
 
       &:hover {

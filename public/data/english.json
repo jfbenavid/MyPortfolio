@@ -1,0 +1,207 @@
+{
+  "photoInfo": {
+    "link": "https://avatars2.githubusercontent.com/u/8607604?s=460&u=d9ae07db5ae15d13432ee2988bbf328e4dc34d9d&v=4",
+    "alt": "Photo"
+  },
+  "information": {
+    "occupation": "I'm a Software Developer",
+    "socialMedia": {
+      "linkedin": "https://www.linkedin.com/in/jfbenavid",
+      "github": "https://github.com/jfbenavid"
+    }
+  },
+  "profile": {
+    "greetings": "Hi! I am",
+    "name": "Fabian Benavides",
+    "description": "I am a Systems Engineer with six years of experience as a software developer, who has worked on multiple software development projects for different clients. I started working with Visual Basic.NET and then evolved into C# in the backend while I worked with ASP.NET/Core, Entity Framework, and Windows Services, and I also have been working with Javascript, React.js, and Angular in the frontend. I am also willing to relocate and learn new technologies and stacks. For the last five years,  Agile practices like SCRUM and Kanban have been part of my working days, and I also have been working as a full-stack developer leading different teams as a technical leader."
+  },
+  "skills": [
+    "C#",
+    ".Net Framework / Core",
+    "ASP.Net / Core",
+    "Entity Framework / Core",
+    "Python",
+    "Django",
+    "Javascript",
+    "Typescript",
+    "NodeJS",
+    "React",
+    "Webpack",
+    "Angular",
+    "SQL Server",
+    "MySQL",
+    "PostgreSQL",
+    "HTML",
+    "CSS",
+    "Scrum",
+    "REST",
+    "SOA",
+    "Git",
+    "TFS",
+    "Docker",
+    "Jenkins",
+    "TDD",
+    "SOLID",
+    "Design Patterns"
+  ],
+  "experience": [
+    {
+      "title": "Software Developer",
+      "company": "Mas Global Consulting",
+      "time": "Jul 2021 - Currently",
+      "responsibilities": [
+        "Building new functionalities and refactoring web applications developed with .Net Core and Angular.",
+        "Testing functionalities before releasing any code.",
+        "Reading and writing code to improve applications performance."
+      ],
+      "achievements": [
+        "Learning Angular."
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "company": "Lean Tech",
+      "time": "Feb 2021 - Jul 2021",
+      "responsibilities": [
+        "Developing new functionalities and refactoring applications developed by NodeJs.",
+        "Writing unit tests related to the functionalities before any release."
+      ],
+      "achievements": [
+        "Getting NodeJs knowledge."
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "company": "Inalambria Internacional",
+      "time": "Dec 2020 - Oct 2021",
+      "responsibilities": [
+        "Analyzing, developing and testing multiple applications using Microsoft technologies.",
+        "Integrating hardware and software to create an application."
+      ],
+      "achievements": [
+        "Creating a full application as a freelance.",
+        "Learning best practices related with tests and TDD.",
+        "Applying micro services to the project.",
+        "Utilizing tools for inspection of code like Sonarqube."
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "company": "Globant",
+      "time": "Jul 2018 - Feb 2021",
+      "responsibilities": [
+        "Evolving web applications, created with Microsoft technologies.",
+        "Improving code before any release."
+      ],
+      "achievements": [
+        "Leading a software development team.",
+        "Gaining knowledge about design patterns.",
+        "Increasing knowledge in AngularJS, ReactJs, Webpack, and CSS.",
+        "Applying my knowledge in Scrum and sharing it with the team."
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "company": "Inalambria Internacional",
+      "time": "Mar 2016 - Jul 2018",
+      "responsibilities": [
+        "Developing REST APIs and web apps with Windows services and web apps using Microsoft technologies.",
+        "Bug fixing the core of the business."
+      ],
+      "achievements": [
+        "Creating a service to get more information efficiently from the core of the business.",
+        "Participating in the architecture design of a new SMS dispatch platform.",
+        "Introducing and applying software programming best practices.",
+        "Developing a new component to process files to dispatch messages more efficiently."
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "JavaScript Basic Course",
+      "institute": "Platzi",
+      "urlFile": "https://platzi.com/p/jfbenavid/curso/1814-basico-javascript/diploma/detalle/",
+      "endingDate": "2021",
+      "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
+    },
+    {
+      "title": "Backend with Node.js",
+      "institute": "Platzi",
+      "urlFile": "https://platzi.com/p/jfbenavid/curso/1646-backend-nodejs/diploma/detalle/",
+      "endingDate": "2021",
+      "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
+    },
+    {
+      "title": "Asynchronism with JavaScript",
+      "institute": "Platzi",
+      "urlFile": "https://platzi.com/p/jfbenavid/curso/1789-asincronismo-js/diploma/detalle/",
+      "endingDate": "2020",
+      "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
+    },
+    {
+      "title": "Docker Course",
+      "institute": "Platzi",
+      "urlFile": "https://platzi.com/p/jfbenavid/curso/2066-docker/diploma/detalle/",
+      "endingDate": "2020",
+      "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
+    },
+    {
+      "title": "ASP.NET Core Course",
+      "institute": "Platzi",
+      "urlFile": "https://platzi.com/p/jfbenavid/curso/1395-course/diploma/detalle/",
+      "endingDate": "2020",
+      "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
+    },
+    {
+      "title": "C# with .NET Core Course",
+      "institute": "Platzi",
+      "urlFile": "https://platzi.com/p/jfbenavid/curso/1359-course/diploma/detalle/",
+      "endingDate": "2019",
+      "instituteLogo": "https://user-images.githubusercontent.com/8607604/118202938-9499e980-b420-11eb-81eb-c3881343eac5.png"
+    }
+  ],
+  "education": [
+    {
+      "title": "Systems Engineering BA.",
+      "institute": "Fundación Universitaria Tecnológico Comfenalco",
+      "urlFile": "https://drive.google.com/open?id=1yIcHFOFQDeOhNAymp70NKygsMB-JUpnq",
+      "endingDate": "2018",
+      "instituteLogo": "https://github-production-user-asset-6210df.s3.amazonaws.com/8607604/271799355-0927f3ab-5767-4f72-b3be-82d5fef2ddfe.png"
+    },
+    {
+      "title": "Scrum Developer",
+      "institute": "CertiProf",
+      "urlFile": "https://drive.google.com/open?id=1e55Jh0mga5FgCFhSIoCCG_7u2ZicUKeH",
+      "endingDate": "2018",
+      "instituteLogo": "https://aulamatriz.edu.co/img/logo_certiprof.png"
+    },
+    {
+      "title": "Scrum Master",
+      "institute": "Scrum Agile Institute",
+      "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpbXNVNUljMHFsYUNOUzZvNWVfOW02RGVJOVhn",
+      "endingDate": "2015",
+      "instituteLogo": "https://user-images.githubusercontent.com/8607604/118060174-bf6c3b00-b357-11eb-8ec2-80c5c6a6d113.png"
+    },
+    {
+      "title": "Programming in C# specialist",
+      "institute": "Microsoft",
+      "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpWVRBVExmX0tlbUE",
+      "endingDate": "2014",
+      "instituteLogo": "https://logodownload.org/wp-content/uploads/2014/04/microsoft-logo-2.png"
+    },
+    {
+      "title": "Technologist in information systems development",
+      "institute": "Fundación Universitaria Tecnológico Comfenalco",
+      "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpbXFmamkxYUZFUnc",
+      "endingDate": "2013",
+      "instituteLogo": "https://github-production-user-asset-6210df.s3.amazonaws.com/8607604/271799355-0927f3ab-5767-4f72-b3be-82d5fef2ddfe.png"
+    },
+    {
+      "title": "Desarrollo basado en conceptos de Ingeniería de Software",
+      "institute": "Microsoft Virtual Academy",
+      "urlFile": "https://drive.google.com/open?id=0B6SgzLhMl9mpMDBld3hoU3JMaEU",
+      "endingDate": "2013",
+      "instituteLogo": "https://logodownload.org/wp-content/uploads/2014/04/microsoft-logo-2.png"
+    }
+  ]
+}

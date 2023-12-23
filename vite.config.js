@@ -5,6 +5,7 @@ const config = () => {
   const port = process.env.PORT || 3000
 
   return {
+    base: './',
     plugins: [react()],
     server: {
       port

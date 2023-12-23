@@ -4,7 +4,7 @@
   "description": "Portfolio where I show my professional career.",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "prepare": "husky install",

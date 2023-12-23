@@ -1,27 +1,26 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es2021: true,
     jest: true
   },
   extends: [
-    'standard',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    'standard'
   ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
-  },
   parserOptions: {
     ecmaFeatures: {
       jsx: true
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 'latest',
     sourceType: 'module'
   },
   plugins: [
     'react'
   ],
-  rules: {
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 }

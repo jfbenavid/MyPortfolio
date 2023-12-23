@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
-    "outDir": "./dist/",
+    "baseUrl": "./src",
+    "outDir": "./dist/build",
     "noImplicitAny": true,
-    "module": "ES2020",
-    "target": "ES6",
+    "module": "ESNext",
+    "target": "ESNext",
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
@@ -19,5 +19,6 @@
       "DOM",
       "ESNext"
     ]
-  }
+  },
+  "exclude": ["node_modules"]
 }

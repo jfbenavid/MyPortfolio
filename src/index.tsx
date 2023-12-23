@@ -1,4 +1,4 @@
-import { render } from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { ThemeProvider } from 'styled-components'
 
 import Index from './components/index'
@@ -6,16 +6,10 @@ import GlobalStyles from './styles/global-styles'
 
 import { theme } from './styles/theme-provider'
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('/service-worker.js')
-    .catch(error => console.log(error.message))
-}
-
-render(
-  <ThemeProvider theme={theme}>
-    <GlobalStyles />
-    <Index />
-  </ThemeProvider>,
-  document.getElementById('app')
-)
+createRoot(document.getElementById('app'))
+  .render(
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Index />
+    </ThemeProvider>,
+  )

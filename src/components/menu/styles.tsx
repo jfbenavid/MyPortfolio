@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-type ulProps = {
+interface ulProps {
   isOpen: boolean
 }
 
@@ -43,7 +43,7 @@ export const Nav = styled.nav`
   }
 `
 
-export const Ul = styled.ul`
+export const Ul = styled.ul<ulProps>`
   list-style: none;
   display: flex;
   align-items: center;
@@ -54,7 +54,7 @@ export const Ul = styled.ul`
   margin-block-end: 0;
   background-color: ${p => p.theme.background.main};
   position: fixed;
-  transform: ${({ isOpen }: ulProps) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
+  transform: ${({ isOpen }) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
   top: 0;
   right: 0;
   height: 100vh;

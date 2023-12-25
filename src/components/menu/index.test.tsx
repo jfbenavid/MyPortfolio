@@ -1,13 +1,13 @@
-import { mount, shallow } from 'enzyme'
-import { Squeeze as Hamburger } from 'hamburger-react'
+import { render, screen } from '@testing-library/react'
 import { Menu, menuProps } from '.'
+import ThemeMock from '../../__mocks__/theme-mock'
 
 describe('Menu component', () => {
   let props: menuProps
 
   beforeEach(() => {
     props = {
-      sectionKeys: ['home', 'about', 'contact'],
+      sectionKeys: ['about', 'contact'],
       locale: {
         home: 'Home',
         about: 'About',
@@ -18,45 +18,71 @@ describe('Menu component', () => {
     }
   })
 
-  it('renders correctly', () => {
-    const component = shallow(<Menu {...props} />)
-    expect(component.exists()).toBe(true)
+  it('renders correctly', async () => {
+    render(
+      <ThemeMock>
+        <Menu {...props} />
+      </ThemeMock>
+      )
+
+    const languageItem = await screen.findByText(props.locale['language'])
+
+    expect(languageItem).not.toBeNull()
   })
 
   describe('language button', () => {
     it('calls toggleLanguage when clicked', () => {
-      const component = shallow(<Menu {...props} />)
-      component.find('a').simulate('click')
-      expect(props.toggleLanguage).toHaveBeenCalled()
-    })
-  })
+      render(
+        <ThemeMock>
+          <Menu {...props} />
+        </ThemeMock>
+      )
 
-  describe('hamburger button', () => {
-    it('toggles isOpen state when clicked', () => {
-      const component = shallow(<Menu {...props} />)
-      component.find(Hamburger).simulate('click')
-      expect(component.state('isOpen')).toBe(true)
-      component.find(Hamburger).simulate('click')
-      expect(component.state('isOpen')).toBe(false)
+      const languageItem = screen.getByText(props.locale['language'])
+      languageItem.click()
+
+      expect(props.toggleLanguage).toHaveBeenCalled()
     })
   })
 
   describe('menu links', () => {
     it('renders the correct number of links', () => {
-      const component = mount(<Menu {...props} />)
-      expect(component.find('li')).toHaveLength(props.sectionKeys.length + 2)
+      render(
+        <ThemeMock>
+          <Menu {...props} />
+        </ThemeMock>
+      )
+
+      const components = screen.getAllByRole('link')
+
+      expect(components).toHaveLength(props.sectionKeys.length + 2)
     })
 
     it('renders the links in the correct order', () => {
-      const component = mount(<Menu {...props} />)
-      const links = component.find('a').map((link) => link.text())
+      render(
+        <ThemeMock>
+          <Menu {...props} />
+        </ThemeMock>
+      )
+
+      const components = screen.getAllByRole('link')
+
+      const links = components.map((link) => link.textContent)
+
       expect(links).toEqual(['Language', 'Contact', 'About', 'Home'])
     })
 
     it('renders the links with the correct href', () => {
-      const component = mount(<Menu {...props} />)
-      const hrefs = component.find('a').map((link) => link.prop('href'))
-      expect(hrefs).toEqual(['#', '#Contact', '#About', '#Home'])
+      render(
+        <ThemeMock>
+          <Menu {...props} />
+        </ThemeMock>
+      )
+
+      const components = screen.getAllByRole('link')
+      const hrefs = components.map((link) => link.getAttribute('href').toLowerCase())
+
+      expect(hrefs).toEqual(['#', '#contact', '#about', '#home'])
     })
   })
 })

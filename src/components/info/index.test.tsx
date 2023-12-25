@@ -1,30 +1,48 @@
-import { shallow } from 'enzyme';
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { StyledInfo } from './styles';
+import { render, screen } from '@testing-library/react'
 import { Info } from './index';
 
 describe('<Info />', () => {
-  const mockData = {
-    occupation: 'Software Engineer',
-    socialMedia: {
-      linkedin: 'https://www.linkedin.com/in/johndoe',
-      github: 'https://github.com/johndoe',
-    },
-  };
+  describe('renders with data', () => {
+    const mockData = {
+      occupation: 'Software Engineer',
+      socialMedia: {
+        linkedin: 'https://www.linkedin.com/in/johndoe',
+        github: 'https://github.com/johndoe',
+      },
+    };
 
-  it('renders with data', () => {
-    const component = shallow(<Info {...mockData} />);
-    expect(component.find(StyledInfo).length).toBe(1);
-    expect(component.find('h2').text()).toBe('Software Engineer');
-    expect(component.find(FaLinkedinIn).prop('href')).toBe('https://www.linkedin.com/in/johndoe');
-    expect(component.find(FaGithub).prop('href')).toBe('https://github.com/johndoe');
+    it('links correctly', () => {
+      render(<Info {...mockData} />);
+      const components = screen.getAllByRole('link')
+      const hrefs = components.map((link) => link.getAttribute('href').toLowerCase())
+
+      expect(hrefs).toEqual(['https://www.linkedin.com/in/johndoe', 'https://github.com/johndoe'])
+    })
+
+    it('header correctly', () => {
+      render(<Info {...mockData} />);
+
+      const component = screen.getByRole('heading')
+
+      expect(component.textContent).toBe('Software Engineer')
+    })
   });
 
-  it('renders without data', () => {
-    const component = shallow(<Info occupation="" socialMedia={{ linkedin: '', github: '' }} />);
-    expect(component.find(StyledInfo).length).toBe(1);
-    expect(component.find('h2').text()).toBe('');
-    expect(component.find(FaLinkedinIn).prop('href')).toBe('');
-    expect(component.find(FaGithub).prop('href')).toBe('');
+  describe('renders without data', () => {
+    it('links correctly', () => {
+      render(<Info  occupation="" socialMedia={{ linkedin: '', github: '' }}  />);
+      const components = screen.getAllByRole('link')
+      const hrefs = components.map((link) => link.getAttribute('href').toLowerCase())
+
+      expect(hrefs).toEqual(['', ''])
+    })
+
+    it('header correctly', () => {
+      render(<Info  occupation="" socialMedia={{ linkedin: '', github: '' }}  />);
+
+      const component = screen.getByRole('heading')
+
+      expect(component.textContent).toBe('')
+    })
   });
 });

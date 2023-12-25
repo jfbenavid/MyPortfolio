@@ -5,10 +5,9 @@ module.exports = {
   testMatch: [
     '**/*.test.(ts|tsx)'
   ],
-  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts']
-  // moduleNameMapper: {
-  //   hooks: '<rootDir>/src/util/hooks/index.ts'
-  // },
+  moduleNameMapper: {
+    '^hooks/(.*)$': '<rootDir>/src/util/hooks/$1'
+  }
   // globals: {
   //   'ts-jest': {
   //     tsconfig: './tsconfig.json'

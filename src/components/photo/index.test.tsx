@@ -1,23 +1,36 @@
-import { mount } from 'enzyme'
+import { render, screen } from '@testing-library/react'
 import { Photo } from '.'
-import { ImageDiv } from './styles';
+import ThemeMock from '../../__mocks__/theme-mock';
 
 describe('<Photo />', () => {
-  it('renders with link and alt props', () => {
-    const props = {
-      link: 'https://example.com/image.jpg',
-      alt: 'Example image',
-    };
-    const component = mount(<Photo {...props} />);
-    expect(component.find(ImageDiv).length).toBe(1);
-    expect(component.find('img').prop('src')).toBe(props.link);
-    expect(component.find('img').prop('alt')).toBe(props.alt);
-  });
+  describe('Rendering with', () => {
+    it('props', async () => {
+      const props = {
+        link: 'https://example.com/image.jpg',
+        alt: 'Example image',
+      };
+      render(
+        <ThemeMock>
+          <Photo {...props} />
+        </ThemeMock>
+      );
 
-  it('renders with no props', () => {
-    const component = mount(<Photo alt='' link='' />);
-    expect(component.find(ImageDiv).length).toBe(1);
-    expect(component.find('img').prop('src')).toBeUndefined();
-    expect(component.find('img').prop('alt')).toBeUndefined();
-  });
-});
+      const image = await screen.findByAltText(props.alt)
+      expect(image).not.toBeNull()
+      expect(image.getAttribute('src')).toBe(props.link)
+    });
+
+    it('no props', async () => {
+      render(
+        <ThemeMock>
+          <Photo alt='' link='' />
+        </ThemeMock>
+      );
+
+      const image = await screen.findByAltText('')
+      expect(image).not.toBeNull()
+      expect(image.getAttribute('src')).toBe('')
+      expect(image.getAttribute('alt')).toBe('')
+    })
+  })
+})

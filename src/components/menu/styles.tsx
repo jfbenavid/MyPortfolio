@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 interface ulProps {
-  isOpen: boolean
+  $isOpen: boolean
 }
 
 export const Nav = styled.nav`
@@ -54,7 +54,7 @@ export const Ul = styled.ul<ulProps>`
   margin-block-end: 0;
   background-color: ${p => p.theme.background.main};
   position: fixed;
-  transform: ${({ isOpen }) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
+  transform: ${({ $isOpen }) => $isOpen ? 'translateX(0)' : 'translateX(100%)'};
   top: 0;
   right: 0;
   height: 100vh;

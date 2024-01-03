@@ -25,7 +25,7 @@ export const Menu = ({sectionKeys, locale, toggleLanguage}: menuProps) => {
         <li>
           <Hamburger size={18} toggled={isOpen} toggle={setIsOpen} />
         </li>
-        <Ul isOpen={isOpen}>{
+        <Ul $isOpen={isOpen}>{
           linksData.reverse().map(section =>
             <li key={section}><a href={`#${locale[section]}`}>{locale[section]}</a></li>
           )}

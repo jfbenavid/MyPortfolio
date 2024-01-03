@@ -1,19 +1,13 @@
-/**
- * @jest-environment jsdom
- */
-import { shallow } from 'enzyme';
-import { Header } from './';
+import { render, screen } from '@testing-library/react'
+import { Header } from './'
 
 describe('<Header />', () => {
-  it('renders with children', () => {
-    const component = shallow(<Header>Test header</Header>);
-    expect(component.find('header').length).toBe(1);
-    expect(component.text()).toBe('Test header');
-  });
+  it('renders correctly', () => {
+    render(<Header>Test header</Header>)
 
-  it('renders without children', () => {
-    const component = shallow(<Header children=''/>);
-    expect(component.find('header').length).toBe(1);
-    expect(component.text()).toBe('');
-  });
-});
+    const component = screen.getByRole('banner')
+
+    expect(component).not.toBeNull()
+    expect(component.innerHTML).toBe('Test header')
+  })
+})

@@ -1,6 +1,6 @@
 {
   "photoInfo": {
-    "link": "https://avatars2.githubusercontent.com/u/8607604?s=460&u=d9ae07db5ae15d13432ee2988bbf328e4dc34d9d&v=4",
+    "link": "https://github.com/jfbenavid/MyPortfolio/assets/8607604/ce2e1af4-153e-406c-8f51-2187377c29ec",
     "alt": "Foto"
   },
   "information": {
@@ -13,7 +13,7 @@
   "profile": {
     "greetings": "Hola! soy",
     "name": "Fabian Benavides",
-    "description": "Desarrollador de software con seis años de experiencia en desarrollo de aplicaciones web, servicios web y servicios de Windows, usando lenguajes de programación como Visual Basic y C#.Net y Javascript; con conocimientos en Python y SQL; tambien certificado como SCRUM Master y SCRUM Developer y, adicionalmente, con diferentes cursos en tecnologías de desarrollo como Javascript, Webpack, React, y Redux."
+    "description": "Desarrollador de software con ocho años de experiencia en desarrollo de aplicaciones web, servicios web y servicios de Windows, usando lenguajes de programación como C#.Net y Javascript; con conocimientos en Python y SQL; tambien certificado como SCRUM Master y SCRUM Developer y, adicionalmente, con diferentes cursos en tecnologías de desarrollo como Javascript, Webpack, React, y Redux."
   },
   "skills": [
     "C#",
@@ -47,8 +47,21 @@
   "experience": [
     {
       "title": "Desarrollador de software",
+      "company": "Sandfield Associates",
+      "time": "Ago 2022 - Actualmente",
+      "responsibilities": [
+        "Desarrollar nuevas funcionalidades y mejoras relacionadas con el frontend y el backend de las aplicaciones de la empresa."
+      ],
+      "achievements": [
+        "Obtener conocimientos en React.",
+        "Mejorar ampliamente el nivel de ingles",
+        "Obtener un reconocimiento como uno de los empleados mas valiosos debido al alto rendimiento y mejoras aplicadas en las aplicaciones de la empresa"
+      ]
+    },
+    {
+      "title": "Desarrollador de software",
       "company": "Mas Global Consulting",
-      "time": "Jul 2021 - Actualmente",
+      "time": "Jul 2021 - Abr 2022",
       "responsibilities": [
         "Desarrollar nuevas funcionalidades y mejoras relacionadas con el frontend y el backend de algunas aplicaciones del cliente.",
         "Crear pruebas unitarias para mejorar la cobertura de codigo."

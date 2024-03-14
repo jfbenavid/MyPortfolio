@@ -1,6 +1,6 @@
 {
   "photoInfo": {
-    "link": "https://avatars2.githubusercontent.com/u/8607604?s=460&u=d9ae07db5ae15d13432ee2988bbf328e4dc34d9d&v=4",
+    "link": "https://github.com/jfbenavid/MyPortfolio/assets/8607604/ce2e1af4-153e-406c-8f51-2187377c29ec",
     "alt": "Photo"
   },
   "information": {
@@ -13,7 +13,7 @@
   "profile": {
     "greetings": "Hi! I am",
     "name": "Fabian Benavides",
-    "description": "I am a Systems Engineer with six years of experience as a software developer, who has worked on multiple software development projects for different clients. I started working with Visual Basic.NET and then evolved into C# in the backend while I worked with ASP.NET/Core, Entity Framework, and Windows Services, and I also have been working with Javascript, React.js, and Angular in the frontend. I am also willing to relocate and learn new technologies and stacks. For the last five years,  Agile practices like SCRUM and Kanban have been part of my working days, and I also have been working as a full-stack developer leading different teams as a technical leader."
+    "description": "I am a Systems Engineer with eight years of experience as a software developer, who has worked on multiple software development projects for different clients. I started working with Visual Basic.NET and then evolved into C# in the backend while I worked with ASP.NET/Core, Entity Framework, and Windows Services, and I also have been working with Javascript, React.js, and Angular in the frontend. I am also willing to learn new technologies and stacks. For the last years, Agile practices like SCRUM and Kanban have been part of my working days, and I also have been working as a full-stack developer leading different teams as a technical leader."
   },
   "skills": [
     "C#",
@@ -46,9 +46,22 @@
   ],
   "experience": [
     {
+      "title": "Solutions Developer",
+      "company": "Sandfield Associates",
+      "time": "Aug 2022 - Currently",
+      "responsibilities": [
+        "Building new features and improvements on frontend and backend code for the different Company apps.",
+        "Mentoring other developers to improve their knowledge."
+      ],
+      "achievements": [
+        "Increasing React knowledge.",
+        "Improvement in English level."
+      ]
+    },
+    {
       "title": "Software Developer",
       "company": "Mas Global Consulting",
-      "time": "Jul 2021 - Currently",
+      "time": "Jul 2021 - Apr 2022",
       "responsibilities": [
         "Building new functionalities and refactoring web applications developed with .Net Core and Angular.",
         "Testing functionalities before releasing any code.",

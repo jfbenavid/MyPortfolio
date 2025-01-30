@@ -54,7 +54,7 @@
     "ts-loader": "^9.5.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
-    "vite": "^4.4.11"
+    "vite": "^4.5.9"
   },
   "dependencies": {
     "hamburger-react": "^2.5.0",
